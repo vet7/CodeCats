@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./css/desktop_layout.css">
-  </head>
 
-  <body>
-    <div id="wrapper">
-      <header>
-        <div id="navleft">navleft</div>
-        <div id="navright">navright</div>
-      </header>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/desktop_layout.css">
+  <script src="PersonalProfile.js"></script>
+</head>
 
-      <main>
-        <banner></banner>
-        <section id="section1"></section>
-        <section id="section2"></section>
-        <section id="section3"></section>
-        <section id="section4"></section>
-      </main>
+<body>
+  <div id="wrapper">
+    <header>
+      <div id="navleft">navleft</div>
+      <div id="navright">navright</div>
+    </header>
 
-      <footer>
-        <div id="footleft"></div>
-        <div id="footright"></div>
-      </footer>
-    </div>
-  </body>
+    <main>
+      <banner></banner>
+      <section id="section1"></section>
+      <section id="section2">
+        <div class="row">
+          <div class="column">
+            <img src="assets/256x256.png" alt="name1" onclick="showProfile1(this);">
+          </div>
+          <div class="column">
+            <img src="assets/256x256.png" alt="name2" onclick="showProfile2(this);">
+          </div>
+          <div class="column">
+            <img src="assets/256x256.png" alt="name3" onclick="showProfile3(this);">
+          </div>
+          <div class="column">
+            <img src="assets/256x256.png" alt="name4" onclick="showProfile4(this);">
+          </div>
+          <div class="column">
+            <img src="assets/256x256.png" alt="name5" onclick="showProfile5(this);">
+          </div>
+          <div class="column">
+            <img src="assets/256x256.png" alt="name6" onclick="showProfile6(this);">
+          </div>
+        </div>
+
+        <div class="profilecontainer">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="profileimg">
+          <div id="imgtext"></div>
+        </div>
+
+      </section>
+      <section id="section3"></section>
+      <section id="section4"></section>
+    </main>
+
+    <footer>
+      <div id="footleft"></div>
+      <div id="footright"></div>
+    </footer>
+  </div>
+</body>
+
 </html>
