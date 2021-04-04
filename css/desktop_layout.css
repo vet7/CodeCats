@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Define environmental variables */
@@ -17,57 +18,76 @@
   width: 100%;
 }
 
-header {
-  height: 50px;
-  margin: 10px;
+#main {
   display: grid;
   grid:
-    "navleft navright"/ 1fr 1fr;
+    "navleft navright"
+    "banner banner"
+    "content content"
+    "footleft footright" / 1fr 1fr;
+}
+
+#navleft, #navright {
+  position: sticky;
+  top: 0px;
+  height: 50px;
 }
 
 #navleft {
   grid-area: navleft;
   border: 2px solid var(--color-black);
-  height: 50px;
 }
 
 #navright {
   grid-area: navright;
   border: 2px solid var(--color-orange);
-  height: 50px;
 }
 
-banner {
+#banner {
   grid-area: banner;
+  height: 150px;
+  border: 2px solid red;
 }
 
-main {}
-
-banner {
-  grid-area: banner;
+#content {
+  grid-area: content;
+  margin: -50px 40px -50px 40px;
 }
 
-#section1, #section3 {
-  grid-area: odd;
-}
-
-#section2, #section4 {
-  grid-area: even;
-}
-
-.column {
-  width: 15%;
-  float: left;
+#section1, #section2, #section3, #section4 {
+  margin: 10px 0;
   padding: 10px;
 }
 
-.column img {
+#section1, #section3 {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+}
+
+#section2, #section4 {
+  background-color: var(--color-secondary);
+  border: 2px solid blue;
+}
+
+#section2 {
+  display: grid;
+  grid:
+  "profilephoto1 profilephoto2 profilephoto3 profilephoto4 profilephoto5 profilephoto6"
+  "profilecontainer profilecontainer profilecontainer profilecontainer profilecontainer profilecontainer" / 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#profilephoto1, #profilephoto2, #profilephoto3, #profilephoto4, #profilephoto5, #profilephoto6 {
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+.profilephoto img {
+  width: 100%;
   opacity: 0.8;
-  width: 50%;
   cursor: pointer;
 }
 
-.column img:hover {
+.profilephoto img:hover {
   opacity: 1;
 }
 
@@ -78,6 +98,7 @@ banner {
 }
 
 .profilecontainer {
+  grid-area: profilecontainer;
   position: relative;
   display: none;
 }
@@ -103,6 +124,16 @@ banner {
   width: 100%;
 }
 
-#footer {
-  grid-area: footer;
+#footleft, #footright {
+  height: 150px;
+}
+
+#footleft {
+  grid-area: footleft;
+  border: 2px solid var(--color-black);
+}
+
+#footright {
+  grid-area: footright;
+  border: 2px solid var(--color-orange);
 }

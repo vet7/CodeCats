@@ -1,3 +1,12 @@
-@media only screen and (max-width:600px) {
-  
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-orange: #FFA96C;
+  --color-secondary: #FFFDFC;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color-orange);
 }
