@@ -27,11 +27,12 @@
     "navleft navright"
     "banner banner"
     "content content"
-    "footleft footright" / 3fr 2fr;
+    "footleft footright"/ 3fr 2fr;
 }
 
 #navleft, #navright {
   position: sticky;
+  padding-top: 10px;
   top: 0px;
   height: 50px;
   z-index: 3;
@@ -46,7 +47,7 @@
   grid-area: navright;
   display: grid;
   grid:
-  "btn1 btn2 btn3 btn4"/ 1fr 1fr 1fr 1fr;
+    "btn1 btn2 btn3 btn4"/ 1fr 1fr 1fr 1fr;
 }
 
 #btn1 {
@@ -70,6 +71,11 @@
   z-index: 1;
 }
 
+#banner img {
+  max-width: 100%;
+  display: block;
+}
+
 #content {
   grid-area: content;
   margin: -50px 40px -50px 40px;
@@ -77,25 +83,25 @@
 }
 
 #section1, #section2, #section3, #section4 {
-  margin: 10px 0;
-  padding: 10px;
+  margin: 0;
+  padding: 30px;
 }
 
 #section1, #section3 {
-  border: 2px solid var(--color-black);
+  border: 1px solid var(--color-black);
   background-color: var(--bg-primary);
 }
 
 #section2, #section4 {
-  border: 2px solid var(--color-orange);
+  border: 1px solid var(--color-orange);
   background-color: var(--bg-secondary);
 }
 
 #section2 {
   display: grid;
   grid:
-  "profilephoto1 profilephoto2 profilephoto3 profilephoto4 profilephoto5 profilephoto6"
-  "profilecontainer profilecontainer profilecontainer profilecontainer profilecontainer profilecontainer" / 1fr 1fr 1fr 1fr 1fr 1fr;
+    "profilephoto1 profilephoto2 profilephoto3 profilephoto4 profilephoto5 profilephoto6"
+    "profilecontainer profilecontainer profilecontainer profilecontainer profilecontainer profilecontainer"/ 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #profilephoto1, #profilephoto2, #profilephoto3, #profilephoto4, #profilephoto5, #profilephoto6 {
@@ -127,9 +133,9 @@
 
 #imgtext {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
+  bottom: 40px;
+  left: 40px;
+  color: black;
   font-size: 20px;
 }
 
@@ -137,7 +143,7 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  color: white;
+  color: black;
   font-size: 35px;
   cursor: pointer;
 }
@@ -149,8 +155,8 @@
 #section3 {
   display: grid;
   grid:
-  "s3h s3h"
-  "s3left s3right" / 2fr 1fr;
+    "s3h s3h"
+    "s3left s3right"/ 2fr 1fr;
 }
 
 #section3 h1 {
@@ -166,8 +172,8 @@
 }
 
 #footleft, #footright {
-  padding: 50px 10px 10px 10px;
-  height: 150px;
+  padding: 100px 20px 20px 20px;
+  height: 400px;
   z-index: 1;
   background-color: var(--color-orange);
 }
@@ -178,4 +184,8 @@
 
 #footright {
   grid-area: footright;
+}
+
+#footright img {
+  max-width: 200px;
 }
