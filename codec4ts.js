@@ -45,3 +45,16 @@ function showProfile6(imgs) {
   document.getElementById('name').innerHTML = "name6";
   document.getElementById("overview").innerHTML = "name 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget leo ut elit dignissim suscipit. Vivamus a erat nec elit ullamcorper facilisis. Nam vulputate eu sem in maximus. Nulla tempus mattis purus vitae blandit. Fusce neque mauris, imperdiet at massa ut, porta cursus ligula. Integer sit amet sagittis lectus, consequat suscipit mi. Phasellus dignissim ex elit, vitae vulputate metus bibendum non. Phasellus pulvinar libero turpis, fringilla iaculis dui tempus vel. Fusce varius pulvinar libero."
 }
+
+function mobileview() {
+  var x = document.getElementById("navright");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+function mobilemenu(x) {
+  x.classList.toggle("change");
+}

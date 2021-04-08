@@ -32,38 +32,20 @@
 
 #navleft, #navright {
   position: sticky;
-  padding-top: 10px;
+  padding-top: 5px;
   top: 0px;
-  height: 50px;
+  height: auto;
   z-index: 3;
   background-color: var(--bg-primary);
 }
 
 #navleft {
   grid-area: navleft;
+  padding-top: 14px;
 }
 
 #navright {
   grid-area: navright;
-  display: grid;
-  grid:
-    "btn1 btn2 btn3 btn4"/ 1fr 1fr 1fr 1fr;
-}
-
-#btn1 {
-  grid-area: btn1;
-}
-
-#btn2 {
-  grid-area: btn2;
-}
-
-#btn3 {
-  grid-area: btn3;
-}
-
-#btn4 {
-  grid-area: btn4;
 }
 
 #banner {
@@ -82,22 +64,22 @@
   z-index: 2;
 }
 
-#section1, #section2, #section3, #section4 {
+#section1, #section2, #section3, #section4, #section2profiles {
   margin: 0;
   padding: 30px;
 }
 
 #section1, #section3 {
-  border: 1px solid var(--color-black);
+  border: 0px solid var(--color-black);
   background-color: var(--bg-primary);
 }
 
-#section2, #section4 {
-  border: 1px solid var(--color-orange);
+#section2, #section4, #section2profiles {
+  border: 0px solid var(--color-orange);
   background-color: var(--bg-secondary);
 }
 
-#section2 {
+#section2profiles {
   display: grid;
   grid:
     "profilephoto1 profilephoto2 profilephoto3 profilephoto4 profilephoto5 profilephoto6"
@@ -106,7 +88,7 @@
 
 #profilephoto1, #profilephoto2, #profilephoto3, #profilephoto4, #profilephoto5, #profilephoto6 {
   padding: 10px;
-  border: 1px solid var(--color-black);
+  border: 0px solid var(--color-black);
 }
 
 .profilephoto img {

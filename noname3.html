@@ -7,13 +7,12 @@
   <link rel="stylesheet" type="text/css" href="css/mobile_layout.css">
   <link rel="stylesheet" type="text/css" href="css/font_styles.css">
   <script src="codec4ts.js"></script>
-  <title>Home</title>
+  <title>noname3</title>
 </head>
 
 <body>
   <div id="wrapper">
     <div id="main">
-
       <div id="navleft">
         <h2>CodeCats;</h2>
       </div>
@@ -44,16 +43,32 @@
               ac arcu suscipit, et rhoncus leo ultrices. Phasellus pulvinar fringilla tortor, vitae laoreet ipsum dapibus a. Proin elementum sem vel purus suscipit, at molestie quam fermentum. Duis finibus augue vitae est pretium egestas.</p>
           </article>
         </section>
-        <section id="section2">
-          <h1>dolor</h1>
-          <article>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie nulla felis, ullamcorper placerat nunc suscipit sit amet. Aenean ullamcorper vitae diam ut rutrum. Suspendisse euismod lacus vitae eros varius, in auctor
-              tortor finibus. Nunc tincidunt odio metus, nec tempor ex sollicitudin at. Duis porttitor tincidunt quam, at fringilla orci hendrerit non. Aenean id aliquet quam, at mattis velit. Sed cursus blandit felis vel tempus. Morbi tempus mauris
-              ac arcu suscipit, et rhoncus leo ultrices. Phasellus pulvinar fringilla tortor, vitae laoreet ipsum dapibus a. Proin elementum sem vel purus suscipit, at molestie quam fermentum. Duis finibus augue vitae est pretium egestas.</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie nulla felis, ullamcorper placerat nunc suscipit sit amet. Aenean ullamcorper vitae diam ut rutrum. Suspendisse euismod lacus vitae eros varius, in auctor
-              tortor finibus. Nunc tincidunt odio metus, nec tempor ex sollicitudin at. Duis porttitor tincidunt quam, at fringilla orci hendrerit non. Aenean id aliquet quam, at mattis velit. Sed cursus blandit felis vel tempus. Morbi tempus mauris
-              ac arcu suscipit, et rhoncus leo ultrices. Phasellus pulvinar fringilla tortor, vitae laoreet ipsum dapibus a. Proin elementum sem vel purus suscipit, at molestie quam fermentum. Duis finibus augue vitae est pretium egestas.</p>
-          </article>
+        <section id="section2profiles">
+          <div id="profilephoto1" class="profilephoto">
+            <img src="assets/256x256.png" alt="name1" onclick="showProfile1(this);">
+          </div>
+          <div id="profilephoto2" class="profilephoto">
+            <img src="assets/256x256.png" alt="name2" onclick="showProfile2(this);">
+          </div>
+          <div id="profilephoto3" class="profilephoto">
+            <img src="assets/256x256.png" alt="name3" onclick="showProfile3(this);">
+          </div>
+          <div id="profilephoto4" class="profilephoto">
+            <img src="assets/256x256.png" alt="name4" onclick="showProfile4(this);">
+          </div>
+          <div id="profilephoto5" class="profilephoto">
+            <img src="assets/256x256.png" alt="name5" onclick="showProfile5(this);">
+          </div>
+          <div id="profilephoto6" class="profilephoto">
+            <img src="assets/256x256.png" alt="name6" onclick="showProfile6(this);">
+          </div>
+
+          <div class="profilecontainer">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="profileimg">
+            <h2 id="name"></h2>
+            <p id="overview"></p>
+          </div>
 
         </section>
         <section id="section3">
