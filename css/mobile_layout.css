@@ -28,7 +28,7 @@ body {
 }
 
 /* Hide all links */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .navbar a {
     display: none;
   }
@@ -40,7 +40,7 @@ body {
 }
 
 /* Adding responsive class when clicking on the menu icon */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
   }
@@ -60,6 +60,20 @@ body {
   #navleft {
     padding-left: 10px;
   }
+
+  #content {
+    margin: 0px;
+  }
+
+  #footleft, #footright {
+    height: auto;
+    padding-top: 20px;
+  }
+
+  #footright img {
+    max-width: 100px;
+    padding-top: 160px;
+  }
 }
 
 /* Animated menu icon */
@@ -69,7 +83,7 @@ body {
 }
 
 .bar1, .bar2, .bar3 {
-  width: 22px;
+  width: 23px;
   height: 4px;
   background-color: var(--color-orange);
   margin: 4px 0;

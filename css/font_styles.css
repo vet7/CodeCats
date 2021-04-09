@@ -15,7 +15,7 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: var(--color-orange);
 }
 
 a:hover {
