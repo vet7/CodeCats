@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/desktop_layout.css">
-  <link rel="stylesheet" type="text/css" href="css/mobile_layout.css">
-  <link rel="stylesheet" type="text/css" href="css/font_styles.css">
-  <script src="codec4ts.js"></script>
-  <title>noname2</title>
+  <link rel="stylesheet" type="text/css" href="../css/desktop_layout.css">
+  <link rel="stylesheet" type="text/css" href="../css/mobile_layout.css">
+  <link rel="stylesheet" type="text/css" href="../css/font_styles.css">
+  <script src="../scripts/codec4ts.js"></script>
+  <title>IT Works</title>
 </head>
 
 <body>
@@ -17,10 +17,10 @@
         <h2>CodeCats;</h2>
       </div>
       <div id="navright" class="navbar">
-        <a href="index.html">Home</a>
-        <a href="noname.html">Project Idea</a>
-        <a href="noname2.html">IT Works</a>
-        <a href="noname3.html">About Us</a>
+        <a href="../index.html">Home</a>
+        <a href="project_idea.html">Project Idea</a>
+        <a href="#">IT Works</a>
+        <a href="about.html">About Us</a>
         <a href="javascript:void(0);" class="icon" onclick="mobileview()">
           <div class="mobilemenucontainer" onclick="mobilemenu(this)">
             <div class="bar1"></div>
@@ -30,7 +30,7 @@
         </a>
       </div>
 
-      <div id="banner"><img src="assets/banner.jpg"></div>
+      <div id="banner"><img src="../assets/banner.jpg"></div>
       <div id="content">
         <section id="section1">
           <h1>dolor</h1>
@@ -43,16 +43,32 @@
               ac arcu suscipit, et rhoncus leo ultrices. Phasellus pulvinar fringilla tortor, vitae laoreet ipsum dapibus a. Proin elementum sem vel purus suscipit, at molestie quam fermentum. Duis finibus augue vitae est pretium egestas.</p>
           </article>
         </section>
-        <section id="section2">
-          <h1>dolor</h1>
-          <article>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie nulla felis, ullamcorper placerat nunc suscipit sit amet. Aenean ullamcorper vitae diam ut rutrum. Suspendisse euismod lacus vitae eros varius, in auctor
-              tortor finibus. Nunc tincidunt odio metus, nec tempor ex sollicitudin at. Duis porttitor tincidunt quam, at fringilla orci hendrerit non. Aenean id aliquet quam, at mattis velit. Sed cursus blandit felis vel tempus. Morbi tempus mauris
-              ac arcu suscipit, et rhoncus leo ultrices. Phasellus pulvinar fringilla tortor, vitae laoreet ipsum dapibus a. Proin elementum sem vel purus suscipit, at molestie quam fermentum. Duis finibus augue vitae est pretium egestas.</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie nulla felis, ullamcorper placerat nunc suscipit sit amet. Aenean ullamcorper vitae diam ut rutrum. Suspendisse euismod lacus vitae eros varius, in auctor
-              tortor finibus. Nunc tincidunt odio metus, nec tempor ex sollicitudin at. Duis porttitor tincidunt quam, at fringilla orci hendrerit non. Aenean id aliquet quam, at mattis velit. Sed cursus blandit felis vel tempus. Morbi tempus mauris
-              ac arcu suscipit, et rhoncus leo ultrices. Phasellus pulvinar fringilla tortor, vitae laoreet ipsum dapibus a. Proin elementum sem vel purus suscipit, at molestie quam fermentum. Duis finibus augue vitae est pretium egestas.</p>
-          </article>
+        <section id="section2profiles">
+          <div id="profilephoto1" class="profilephoto">
+            <img src="../assets/256x256.png" alt="name1" onclick="showProfile1(this);">
+          </div>
+          <div id="profilephoto2" class="profilephoto">
+            <img src="../assets/256x256.png" alt="name2" onclick="showProfile2(this);">
+          </div>
+          <div id="profilephoto3" class="profilephoto">
+            <img src="../assets/256x256.png" alt="name3" onclick="showProfile3(this);">
+          </div>
+          <div id="profilephoto4" class="profilephoto">
+            <img src="../assets/256x256.png" alt="name4" onclick="showProfile4(this);">
+          </div>
+          <div id="profilephoto5" class="profilephoto">
+            <img src="../assets/256x256.png" alt="name5" onclick="showProfile5(this);">
+          </div>
+          <div id="profilephoto6" class="profilephoto">
+            <img src="../assets/256x256.png" alt="name6" onclick="showProfile6(this);">
+          </div>
+
+          <div class="profilecontainer">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="profileimg">
+            <h2 id="name"></h2>
+            <p id="overview"></p>
+          </div>
 
         </section>
         <section id="section3">
@@ -85,7 +101,7 @@
           suscipit, et rhoncus leo ultrices. Phasellus pulvinar fringilla tortor, vitae laoreet ipsum dapibus a. Proin elementum sem vel purus suscipit, at molestie quam fermentum. Duis finibus augue vitae est pretium egestas.</p>
       </div>
       <div id="footright">
-        <img src="assets/logo_white.png">
+        <img src="../assets/logo_white.png">
       </div>
     </div>
   </div>
