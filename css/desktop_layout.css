@@ -64,6 +64,13 @@
   z-index: 2;
 }
 
+.imgLeft {
+  height: 75px;
+  width: 150px;
+  border: 2px solid var(--color-black);
+  border-radius: 15px;
+}
+
 #section1, #section2, #section3, #section4, #section2profiles {
   margin: 0;
   padding: 30px;
