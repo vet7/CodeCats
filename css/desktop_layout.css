@@ -71,6 +71,10 @@
   border-radius: 15px;
 }
 
+.imgMid {
+  width: 800px;
+}
+
 #section1, #section2, #section3, #section4, #section2profiles {
   margin: 0;
   padding: 30px;
