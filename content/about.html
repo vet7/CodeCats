@@ -45,29 +45,34 @@
         </section>
         <section id="section2profiles">
           <div id="profilephoto1" class="profilephoto">
-            <img src="../assets/256x256.png" alt="name1" onclick="showProfile1(this);">
+            <img id="CB" src="../assets/Profile_Pics/Chelsea Bragg.png" alt="Chelsea Bragg" onclick="showProfile1(this);">
           </div>
           <div id="profilephoto2" class="profilephoto">
-            <img src="../assets/256x256.png" alt="name2" onclick="showProfile2(this);">
+            <img id="JK" src="../assets/Profile_Pics/Jake Kent.png" alt="Jake Kent" onclick="showProfile2(this);">
           </div>
           <div id="profilephoto3" class="profilephoto">
-            <img src="../assets/256x256.png" alt="name3" onclick="showProfile3(this);">
+            <img id="JR" src="../assets/Profile_Pics/Joseph_Ashwin_Royan.png" alt="Joseph Ashwin Royan" onclick="showProfile3(this);">
           </div>
           <div id="profilephoto4" class="profilephoto">
-            <img src="../assets/256x256.png" alt="name4" onclick="showProfile4(this);">
+            <img id="EM" src="../assets/Profile_Pics/Eun_Mi_Seo.png" alt="Eun Mi Seo" onclick="showProfile4(this);">
           </div>
           <div id="profilephoto5" class="profilephoto">
-            <img src="../assets/256x256.png" alt="name5" onclick="showProfile5(this);">
+            <img id="AN" src="../assets/Profile_Pics/Arian_Najafi_Yamchelo.png" alt="Arian Najafi Yamchelo" onclick="showProfile5(this);">
           </div>
           <div id="profilephoto6" class="profilephoto">
-            <img src="../assets/256x256.png" alt="name6" onclick="showProfile6(this);">
+            <img id="YY" src="../assets/Profile_Pics/Yvette_Yang.png" alt="Yvette Yang" onclick="showProfile6(this);">
           </div>
-
           <div class="profilecontainer">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <article>
+              <br><br>
+              <h2 id="name"></h2>
+              <p id="bio"></p>
+            </article>
             <img id="profileimg">
-            <h2 id="name"></h2>
-            <p id="overview"></p>
+            <article>
+              <p id="overview"></p><br>
+              <p id="reflection"></p>
+            </article>
           </div>
 
         </section>

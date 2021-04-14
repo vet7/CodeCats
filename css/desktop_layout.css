@@ -64,11 +64,40 @@
   z-index: 2;
 }
 
+#expandarticleAV, #expandarticleBC, #expandarticleCS, #expandarticleML {
+  display: none;
+}
+
+#expandarticleAV img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#expandarticleBC img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#expandarticleML img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expandButton {
+  color: var(--color-orange);
+}
+
 .imgLeft {
-  height: 75px;
-  width: 150px;
-  border: 2px solid var(--color-black);
-  border-radius: 15px;
+  float: left;
+  display: inline-block;
+  width:20%;
+  padding-right: 10px;
 }
 
 .imgMid {
@@ -104,7 +133,7 @@
 
 .profilephoto img {
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.6;
   cursor: pointer;
 }
 
@@ -132,17 +161,9 @@
   font-size: 20px;
 }
 
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: black;
-  font-size: 35px;
-  cursor: pointer;
-}
-
 .profilecontainer img {
   width: 100%;
+  padding: 30px;
 }
 
 #section3 {
@@ -162,6 +183,21 @@
 
 #s3right {
   grid-area: s3right;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+ol, ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.projectImg {
+  display: block;
+  width: 100%;
 }
 
 #footleft, #footright {

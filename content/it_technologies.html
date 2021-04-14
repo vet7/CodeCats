@@ -33,321 +33,438 @@
       <div id="banner"><img src="../assets/banner.jpg"></div>
       <div id="content">
         <section id="section1">
-          <h1>Autonomous Vehicles</h1>
-          <br>
-          <!--Article should be hidden and appear on click -->
           <article>
+            <h1 id="scrolltoAV">Autonomous Vehicles</h1>
+            <br>
             <h3>What are Autonomous Vehicles?</h3>
-              <br>
-              <p>Autonomous vehicles, also known as ‘driverless cars’ or ‘automated vehicles’,are vehicles that offer the automation of tasks that we associate with driving. Vehicle automation can beregistered on a scale of zero to five(NHTSA2020).</p>
-              <br>
+            <br>
+            <p>Autonomous vehicles, also known as ‘driverless cars’ or ‘automated vehicles’,are vehicles that offer the automation of tasks that we associate with driving. Vehicle automation can beregistered on a scale of zero to five(NHTSA2020).
+              <!--Article should be hidden and appear on click -->
+              <button class="expandButton" onclick="expandAV()">Click here to read more!</button>
+            </p>
+          </article>
 
-              <ol>
-                <li>No automation -A human driver performs all driving tasks.</li>
-                <li>Driver assistance -A single automated feature is offered. E.g., Cruise Control</li>
-                <li>Partial automation -Features ADAS or Advanced DriverAssistance Systems that enables the vehicle to perform steering and acceleration;however, a human is still required to monitor the vehicle and can take control at any time.</li>
-                <li>Conditional automation -Offers environmental detection capabilities that enable the vehicle to perform most driving tasks;however,human override is still required.</li>
-                <li>High automation –Enablesthe vehicle to perform all tasks without human interaction;however,human override is still an option. </li>
-                <li>Full automation –A vehicle is considered fully automated when it is able to perform all driving tasks without the need for any human interaction or attention.</li>
-              </ol>
-              <img src="">
-              <p><b>Figure 1:</b> Society of Automotive Engineers (SAE) Automation Levelsby NHTSA2020</p>
+          <article id="expandarticleAV">
+            <br>
+            <ol>
+              <li>No automation -A human driver performs all driving tasks.</li>
+              <li>Driver assistance -A single automated feature is offered. E.g., Cruise Control</li>
+              <li>Partial automation -Features ADAS or Advanced DriverAssistance Systems that enables the vehicle to perform steering and acceleration;however, a human is still required to monitor the vehicle and can take control at any time.</li>
+              <li>Conditional automation -Offers environmental detection capabilities that enable the vehicle to perform most driving tasks;however,human override is still required.</li>
+              <li>High automation –Enablesthe vehicle to perform all tasks without human interaction;however,human override is still an option. </li>
+              <li>Full automation –A vehicle is considered fully automated when it is able to perform all driving tasks without the need for any human interaction or attention.</li>
+            </ol>
+            <img src="../assets/content/it_technologies/Autonomous Vehicles/Automation_Levelsby.png">
+            <p><b>Figure 1:</b> Society of Automotive Engineers (SAE) Automation Levelsby NHTSA2020</p>
 
-              <!--Needs formatting -->
-              <br>
-              <p>Today, the most common form of automated vehicles are new cars that offer conditional automation (level 3) features,such as environmental detection capabilities that can perform most driving tasks, including accelerating, braking, turning or changing lanes. These tasks are delivered via a computer system but still require human override(NHTSA 2020).</p>
-              <br>
-              <p>Although high automation (level 4) vehicles are currently not available to the everyday consumer, there has been significant development in the deployment of these vehicles. Because of thecurrent limitations on legislation and infrastructure, the development of these vehicles has predominately been geared towardsshuttles,ridesharing and robotaxis.A small number of these vehicles are currently operationalaround the world, including Western Australia(NHTSA 2020). </p>
-              <img src="../assets/content/it_technologies/Autonomous Vehicles/Intellibus.png">
+            <!--Needs formatting -->
+            <br>
+            <p>Today, the most common form of automated vehicles are new cars that offer conditional automation (level 3) features,such as environmental detection capabilities that can perform most driving tasks, including accelerating, braking,
+              turning or changing lanes. These tasks are delivered via a computer system but still require human override(NHTSA 2020).</p>
+            <br>
+            <p>Although high automation (level 4) vehicles are currently not available to the everyday consumer, there has been significant development in the deployment of these vehicles. Because of thecurrent limitations on legislation and
+              infrastructure, the development of these vehicles has predominately been geared towardsshuttles,ridesharing and robotaxis.A small number of these vehicles are currently operationalaround the world, including Western Australia(NHTSA
+              2020). </p>
+            <img src="../assets/content/it_technologies/Autonomous Vehicles/Intellibus.png">
+            <p><b>Figure 2:</b> Intellibus by RAC, 2020</p>
 
-              <br>
-              <p>When it comes to the technology behind the automation, most companies currently deploying conditional and high automated vehicles usethe same base level of technology. This technology includes:</p>
 
+            <br>
+            <p>When it comes to the technology behind the automation, most companies currently deploying conditional and high automated vehicles usethe same base level of technology. This technology includes:</p>
+
+            <div>
+              <br>
               <div>
-                <div>
-                  <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Machine Learning.png">
 
-                  <p class="textRight">Machine Learning-A type of Artificial Intelligence that uses a computer system that utilises a combination of algorithms and statistics to find patterns in data. These systems can then use that data to learn, adapt and make decisions without the need for human intervention (IBM 2020). Machine Learning provides the vehicle the ability to collect and interpret data on its surroundings based on information provided by cameras and sensors. This vehicle then uses this information to decide what actions to take. </p>
-                </div>
 
-                <div>
-                  <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/LiDAR.png">
-                  <p class="textRight">LiDAR-A detection system that uses light pulses from a laser to measure variable distances (NOAA 2021).LiDAR provides autonomous vehicles the ability to ‘see’, in the sense that it provides a 360-degree view of its surroundings. This is done using a continuously rotating LiDAR system, allowing the vehicle to detect obstructions, avoiding collisions and resulting in a smoother ride. </p>
-                </div>
 
-                <div>
-                  <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Ultrasonic Sensor.png">
-                  <p class="textRight">Ultrasonic Sensors-A sensor that gauges the distance between objects by using high-frequency sound waves and measuring the time between emission and reception (Maxbotix 2021). Similar to LiDAR, ultrasonic sensorsallow the vehicle to detect obstacles, however, unlike LiDAR, it provides the unique ability to see through objects, making them ideal in bad weather (Medium 2020). </p>
-                </div>
+                <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Machine Learning.png">
+                <p class="textRight">Machine Learning-A type of Artificial Intelligence that uses a computer system that utilises a combination of algorithms and statistics to find patterns in data. These systems can then use that data to learn,
+                  adapt and make decisions without the need for human intervention (IBM 2020). Machine Learning provides the vehicle the ability to collect and interpret data on its surroundings based on information provided by cameras and sensors.
+                  This vehicle then uses this information to decide what actions to take. </p>
 
-                <div>
-                  <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Radar.JPG">
-                  <p class="textRight">Radar-A system that uses electromagnetic sensors to detect, locate, track and recognise objects at variable distances (Britannica 2019). Radar allows autonomous vehicles to monitor the position of nearby vehicles.</p>
-                </div>
+                <br>
+                <p><b>Figure 3:</b> Machine Learning by Dohmse, 2015</p>
+                <br>
 
-                <div>
-                  <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Camera.JPG">
-                  <p class="textRight">Cameras-A device that uses a lens and light to capture an image (Britannica 2021).Cameras are placed on every side of an autonomous vehicle to provide a 360-degree view of its surroundings.</p>
-                </div>
+
               </div>
 
-              <br>
-              <h3>Impact of Autonomous Vehicles</h3>
-              <br>
-              <p>As these technologies change and adapt, we will likely see fully automated (level 5) vehicles in testing phases over the next few years, resulting in more accessibility for the everyday consumer. The overall impact, be that positive or negative, will be significant.</p>
+              <div>
+                <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/LiDAR.png">
+                <p class="textRight">LiDAR-A detection system that uses light pulses from a laser to measure variable distances (NOAA 2021).LiDAR provides autonomous vehicles the ability to ‘see’, in the sense that it provides a 360-degree view of
+                  its surroundings. This is done using a continuously rotating LiDAR system, allowing the vehicle to detect obstructions, avoiding collisions and resulting in a smoother ride. </p>
+                <br>
+                <p><b>Figure 4:</b> Distance by Oliver Cameron, 2017</p>
+                <br>
+              </div>
 
-              <br>
-              <h3>Impact on Jobs</h3>
-              <br>
-              <p>With the implementation of autonomous vehicles essentially making drivers redundant, perhaps the most obvious job affected would be the drivers of ridesharing services (Uber, Lyft etc.). Globally, there are currently over 3 million drivers working for Uber alone,and on average, each driver earns around $364 per month (Blair n.d). By removing the need to employ drivers, Uber can potentially cut their running costs by over $1.3 billion. </p>
-              <br>
-              <p>As technology changes and evolves, theDepartment of Industry, Science, Energy and Resources(DIIS) suggests that there is also the potential for employment growth across severalsectors,both existing and potentially entirely new industries, these industries include manufacturing, mining and agriculture (Parliament of Australia 2017).</p>
+              <div>
+                <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Ultrasonic Sensor.png">
+                <p class="textRight">Ultrasonic Sensors-A sensor that gauges the distance between objects by using high-frequency sound waves and measuring the time between emission and reception (Maxbotix 2021). Similar to LiDAR, ultrasonic
+                  sensorsallow the vehicle to detect obstacles, however, unlike LiDAR, it provides the unique ability to see through objects, making them ideal in bad weather (Medium 2020). </p>
+                <br>
+                <p><b>Figure 5:</b> Ultrasonic Sensors by Ansari Aquib, 2020</p><br><br>
+              </div>
 
-              <br>
-              <h3>Environmental Impact</h3>
-              <br>
-              <p>Most companies developing autonomous vehicles are doing so with the aim to utilise electric vehicles as opposed to hybrid or combustion engine vehicles. It is estimated that using electric vehicles would reduce the amount of harmful greenhouse gas emissions by around 60% (Elezaj 2021). There has been some debate amongst researchers concerning whether an all-electric based autonomous vehicle will lead to significantly increased power needs, and as a result, autonomous vehicles would need to be gas-electric hybrids (Brewer 2020).</p>
+              <div>
+                <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Radar.JPG">
+                <p class="textRight">Radar-A system that uses electromagnetic sensors to detect, locate, track and recognise objects at variable distances (Britannica 2019). Radar allows autonomous vehicles to monitor the position of nearby vehicles.
+                </p>
+                <br><br><br>
+                <p><b>Figure 6:</b> How Does Radar Work? by EOL</p>
+                <br>
+              </div>
 
-              <br>
-              <h3>Safety Impact</h3>
-              <br>
-              <p>It is estimated that 90% of all fatalities on the road are directly attributed to human error. These errors include speeding, drink/drug driving and distractions in and out of the vehicle (mobile phone use, exhaustion etc.) (NRSP 2013). Globally, 1.3 million people are killed in road accidents every year (WHO 2020). Australia alone reports an average of 1000 fatalities annually (BITRE 2020). Autonomous vehicles provide the ability to remove manual driving controls altogether, resulting in the eradication of all fatalities attributed to human error (NHSA 2020). </p>
+              <div>
+                <img class="imgLeft" src="../assets/content/it_technologies/Autonomous Vehicles/Camera.JPG">
+                <p class="textRight">Cameras-A device that uses a lens and light to capture an image (Britannica 2021).Cameras are placed on every side of an autonomous vehicle to provide a 360-degree view of its surroundings.</p>
+                <br><br><br>
+                <p><b>Figure 7:</b> How Does a camera Work? by Gabor Holtzer, n.d.</p>
+                <br>
+              </div>
+            </div>
 
-              <img src="../assets/content/it_technologies/Autonomous Vehicles/12 month total by road user.png">
-              <p><b>Figure 8:</b> Road Deaths: 12 Month Total Australiaby BITRE, 2020</p>
+            <br>
+            <h3>Impact of Autonomous Vehicles</h3>
+            <br>
+            <p>As these technologies change and adapt, we will likely see fully automated (level 5) vehicles in testing phases over the next few years, resulting in more accessibility for the everyday consumer. The overall impact, be that positive or
+              negative, will be significant.</p>
 
-              <br>
-              <h3>How Will This Effect You?</h3>
-              <br>
-              <p>Personally, the implementation of fully autonomous (level 5) vehicles at a consumer level will have a significantimpact on my life. As an epileptic, although medically cleared to, I do not drive due to the potentialrisk imposed onmyself andothers.To go from place to place, I rely heavily on friends, family,and public transport. Autonomous vehicles have the capability to not only create safe driving environments but also provide me with a steady, reliable,independent mode of transport.</p>
-              <br>
-              <p>Without the need for a driver, these vehicles also have the potential to assist friends and family members who are new parents or have young children. Parents and caregivers will be able to focus all of their attention on those insidethe vehicle without having to be concerned aboutpotential distractions both inside and outside.</p>
-              <br>
-              <p>With the ability to eradicate human driving errors, they have the potential to not only make roads safer fordrivers but also pedestrians. This is especially significantto me as my father was fatally struck by a speeding vehicle in 2018. </p>
-              <br>
-              <p>Overall, the implementation of autonomous vehicles into society is largely positive but does,however,come with many drawbacks. As we are severalyears away from a fully autonomous vehicle becoming a staple in everyday life, the companies developing them have time to address these concerns with their ever-changing and adaptable technologies. </p>
+            <br>
+            <h3>Impact on Jobs</h3>
+            <br>
+            <p>With the implementation of autonomous vehicles essentially making drivers redundant, perhaps the most obvious job affected would be the drivers of ridesharing services (Uber, Lyft etc.). Globally, there are currently over 3 million
+              drivers working for Uber alone,and on average, each driver earns around $364 per month (Blair n.d). By removing the need to employ drivers, Uber can potentially cut their running costs by over $1.3 billion. </p>
+            <br>
+            <p>As technology changes and evolves, the Department of Industry, Science, Energy and Resources(DIIS) suggests that there is also the potential for employment growth across severalsectors,both existing and potentially entirely new
+              industries, these industries include manufacturing, mining and agriculture (Parliament of Australia 2017).</p>
 
-              <br>
-              <h3>References</h3>
+            <br>
+            <h3>Environmental Impact</h3>
+            <br>
+            <p>Most companies developing autonomous vehicles are doing so with the aim to utilise electric vehicles as opposed to hybrid or combustion engine vehicles. It is estimated that using electric vehicles would reduce the amount of harmful
+              greenhouse gas emissions by around 60% (Elezaj 2021). There has been some debate amongst researchers concerning whether an all-electric based autonomous vehicle will lead to significantly increased power needs, and as a result,
+              autonomous vehicles would need to be gas-electric hybrids (Brewer 2020).</p>
 
-              <br>
-              <p>NHTSA 2020, <i>Automated Vehicles for Safety</i>, NHTSA, viewed 1 April 2021,</p>
-              <p>
-                &lt<a href="https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety">https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety</a>&gt
-              </p>
-              <br>
-              <br>
+            <br>
+            <h3>Safety Impact</h3>
+            <br>
+            <p>It is estimated that 90% of all fatalities on the road are directly attributed to human error. These errors include speeding, drink/drug driving and distractions in and out of the vehicle (mobile phone use, exhaustion etc.) (NRSP
+              2013). Globally, 1.3 million people are killed in road accidents every year (WHO 2020). Australia alone reports an average of 1000 fatalities annually (BITRE 2020). Autonomous vehicles provide the ability to remove manual driving
+              controls altogether, resulting in the eradication of all fatalities attributed to human error (NHSA 2020). </p>
 
-              <p>RAC n.d, <i>The Vehicle</i>, RAC, viewed 1 April 2021,</p>
-              <p>
-                &lt<a href="https://rac.com.au/about-rac/advocating-change/initiatives/automated-vehicle-program/intellibus/the-vehicle">https://rac.com.au/about-rac/advocating-change/initiatives/automated-vehicle-program/intellibus/the-vehicle</a>&gt
-              </p>
-              <br>
-              <br>
+            <img src="../assets/content/it_technologies/Autonomous Vehicles/12 month total by road user.png">
+            <p><b>Figure 8:</b> Road Deaths: 12 Month Total Australiaby BITRE, 2020</p>
 
-              <p>Dohmse 2015, <i>Machine Learning BE Computer 2015 PAT A Y</i>, SlideToDoc, viewed 1 April 2021,</p>
-              <p>
-                &lt<a href="https://slidetodoc.com/machine-learning-be-computer-2015-pat-a-y/">https://slidetodoc.com/machine-learning-be-computer-2015-pat-a-y/</a>&gt
-              </p>
-              <br>
-              <br>
+            <br>
+            <h3>How Will This Effect You?</h3>
+            <br>
+            <p>Personally, the implementation of fully autonomous (level 5) vehicles at a consumer level will have a significantimpact on my life. As an epileptic, although medically cleared to, I do not drive due to the potentialrisk imposed
+              onmyself andothers.To go from place to place, I rely heavily on friends, family,and public transport. Autonomous vehicles have the capability to not only create safe driving environments but also provide me with a steady,
+              reliable,independent mode of transport.</p>
+            <br>
+            <p>Without the need for a driver, these vehicles also have the potential to assist friends and family members who are new parents or have young children. Parents and caregivers will be able to focus all of their attention on those
+              insidethe vehicle without having to be concerned aboutpotential distractions both inside and outside.</p>
+            <br>
+            <p>With the ability to eradicate human driving errors, they have the potential to not only make roads safer fordrivers but also pedestrians. This is especially significantto me as my father was fatally struck by a speeding vehicle in
+              2018. </p>
+            <br>
+            <p>Overall, the implementation of autonomous vehicles into society is largely positive but does,however,come with many drawbacks. As we are severalyears away from a fully autonomous vehicle becoming a staple in everyday life, the
+              companies developing them have time to address these concerns with their ever-changing and adaptable technologies. </p>
 
-              <p>National Ocean Service n.d, <i>What is lidar?</i>, NOAA, viewed 2 April 2021,</p>
-              <p>
-                &lt<a href="https://oceanservice.noaa.gov/facts/lidar.html">https://oceanservice.noaa.gov/facts/lidar.html</a>&gt
-              </p>
-              <br>
-              <br>
+            <br>
+            <h3>References</h3>
 
-              <p>Merrill I. Skolnik, <i>Radar</i>, Brittanica, viewed 2 April 2021,</p>
-              <p>
-                &lt<a href="https://www.britannica.com/technology/radar">https://www.britannica.com/technology/radar</a>&gt
-              </p>
-              <br>
-              <br>
+            <br>
 
-              <p>Roderick Burnett 2020, <i>Understanding How Ultrasonic Sensors Work</i>, MaxBotix, viewed 2 April 2021,</p>
-              <p>
-                &lt<a href="https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.html">https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.html</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Aquib, A 2020, <i>Ultrasonic Sensor and Arduino Tutorial</i>, Medium, viewed 3 April 2021,</p>
+            <p>
+              &lt<a href="https://medium.com/@aquibansari12377/ultrasonic-sensor-and-arduino-tutorial-89c38c81f103">https://medium.com/@aquibansari12377/ultrasonic-sensor-and-arduino-tutorial-89c38c81f103</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>Brittanica n.d, <i>Camera</i>, Brittanica, viewed 2 April 2021,</p>
-              <p>
-                &lt<a href="https://www.britannica.com/technology/camera">https://www.britannica.com/technology/camera</a>&gt
-              </p>
-              <br>
-              <br>
 
-              <p>Mahashreveta Choudhary 2020, <i>Why LiDAR is important for autonomous vehicle?</i>, Geospatial World, viewed 2 April 2021,</p>
-              <p>
-                &lt<a href="https://www.geospatialworld.net/blogs/why-lidar-is-important-for-autonomous-vehicle/">https://www.geospatialworld.net/blogs/why-lidar-is-important-for-autonomous-vehicle/</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Blair, I n.d, <i>Uber Revenue and Usage Statistics</i>, Buildfire, viewed 8 April 2021,</p>
+            <p>
+              &lt<a href="https://www.nrspp.org.au/resources/human-error-in-road-accidents/">https://www.nrspp.org.au/resources/human-error-in-road-accidents/</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>Marc Green & John Senders 2013, <i>Human Error In Road Accidents</i>, National Road Safety Partnership Program (NRSPP), viewed 2 April 2021,</p>
-              <p>
-                &lt<a href="https://www.nrspp.org.au/resources/human-error-in-road-accidents/">https://www.nrspp.org.au/resources/human-error-in-road-accidents/</a>&gt
-              </p>
-              <br>
-              <br>
 
-              <p>IBM Cloud Edition 2020, <i>Machine Learning</i>, IBM, viewed 3 April 2021,</p>
-              <p>
-                &lt<a href="https://www.ibm.com/cloud/learn/machine-learning">https://www.ibm.com/cloud/learn/machine-learning</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Brewer, M 2020, <i>The electric future of autonomous vehicles</i>, Carnegie Mellon University, viewed 3 April 2021,</p>
+            <p>
+              &lt<a href="https://www.cmu.edu/news/stories/archives/2020/july/electric-autonomous-vehicles.html">https://www.cmu.edu/news/stories/archives/2020/july/electric-autonomous-vehicles.html</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>Oliver Cameron 2017, <i>An Introduction to LIDAR: The Key Self-Driving Car Sensor</i>, Voyage, viewed 3 April 2021,</p>
-              <p>
-                &lt<a href="https://news.voyage.auto/an-introduction-to-lidar-the-key-self-driving-car-sensor-a7e405590cff">https://news.voyage.auto/an-introduction-to-lidar-the-key-self-driving-car-sensor-a7e405590cff</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Brittanica n.d, <i>Camera</i>, Brittanica, viewed 2 April 2021,</p>
+            <p>
+              &lt<a href="https://www.britannica.com/technology/camera">https://www.britannica.com/technology/camera</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>Ansari Aquib 2020, <i>Ultrasonic Sensor and Arduino Tutorial</i>, Medium, viewed 3 April 2021,</p>
-              <p>
-                &lt<a href="https://medium.com/@aquibansari12377/ultrasonic-sensor-and-arduino-tutorial-89c38c81f103">https://medium.com/@aquibansari12377/ultrasonic-sensor-and-arduino-tutorial-89c38c81f103</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Bureau of Infrastructure and Transport Research Economics 2020, <i>Safety Statistics</i>, Bureau of Infrastructure and Transport Research Economics (BITRE), viewed 4 April 2021,</p>
+            <p>
+              &lt<a href="https://www.bitre.gov.au/statistics/safety">https://www.bitre.gov.au/statistics/safety</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>EOL (Earth Observing Laboratory) n.d, <i>How Do Radars Work?</i>, National Center for Atmospheric Research, viewed 3 April 2021,</p>
-              <p>
-                &lt<a href="https://www.eol.ucar.edu/content/how-do-radars-work">https://www.eol.ucar.edu/content/how-do-radars-work</a>&gt
-              </p>
-              <br>
-              <br>
 
-              <p>Gabor Holtzer n.d, <i>How Does a Camera Work?</i>, Expert Photography, viewed 3 April 2021,</p>
-              <p>
-                &lt<a href="https://expertphotography.com/how-does-a-camera-work">https://expertphotography.com/how-does-a-camera-work</a>&gt
-              </p>
-              <br>
-              <br>
 
-              <p>Rilind Elezaj 2021, <i>Surprising Ways How Driverless Cars Will Change Our Future</i>, Machine Design, viewed 3 April 2021,</p>
-              <p>
-                &lt<a href="https://www.machinedesign.com/mechanical-motion-systems/article/21837191/surprising-ways-how-driverless-cars-will-change-our-future">https://www.machinedesign.com/mechanical-motion-systems/article/21837191/surprising-ways-how-driverless-cars-will-change-our-future</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Burnett, R 2020, <i>Understanding how ultrasonic sensors work</i>, MaxBotix, viewed 2 April 2021,</p>
+            <p>
+              &lt<a href="https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.html">https://www.maxbotix.com/articles/how-ultrasonic-sensors-work.html</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>Madison Brewer 2020, <i>The Electric Future of Autonomous Vehicles</i>, Carnegie Mellon University, viewed 3 April 2021,</p>
-              <p>
-                &lt<a href="https://www.cmu.edu/news/stories/archives/2020/july/electric-autonomous-vehicles.html">https://www.cmu.edu/news/stories/archives/2020/july/electric-autonomous-vehicles.html</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Cameron, O 2017, <i>An Introduction to LIDAR: The Key Self-Driving Car Sensor</i>, Voyage, viewed 3 April 2021,</p>
+            <p>
+              &lt<a href="https://news.voyage.auto/an-introduction-to-lidar-the-key-self-driving-car-sensor-a7e405590cff">https://news.voyage.auto/an-introduction-to-lidar-the-key-self-driving-car-sensor-a7e405590cff</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>World Health Organization (WHO) 2020, <i>Road traffic injuries?</i>, World Health Organization (WHO) 2020, viewed 4 April 2021,</p>
-              <p>
-                &lt<a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a>&gt
-              </p>
-              <br>
-              <br>
 
-              <p>Bureau of Infrastructure and Transport Research Economics (BITRE) 2020, <i>Safety Statistics</i>, Bureau of Infrastructure and Transport Research Economics (BITRE), viewed 4 April 2021,</p>
-              <p>
-                &lt<a href="https://www.bitre.gov.au/statistics/safety">https://www.bitre.gov.au/statistics/safety</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Choudhary, M 2020, <i>Why LiDAR is important for autonomous vehicle?</i>, Geospatial World, viewed 2 April 2021,</p>
+            <p>
+              &lt<a href="https://www.geospatialworld.net/blogs/why-lidar-is-important-for-autonomous-vehicle/">https://www.geospatialworld.net/blogs/why-lidar-is-important-for-autonomous-vehicle/</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>Marc Green & John Senders 2013, <i>Human Error In Road Accidents</i>, National Road Safety Partnership Program (NRSPP), viewed 4 April 2021,</p>
-              <p>
-                &lt<a href="https://www.nrspp.org.au/resources/human-error-in-road-accidents/">https://www.nrspp.org.au/resources/human-error-in-road-accidents/</a>&gt
-              </p>
-              <br>
-              <br>
 
-              <p>Ian Blair n.d, <i>Uber Revenue and Usage Statistics</i>, Buildfire, viewed 8 April 2021,</p>
-              <p>
-                &lt<a href="https://www.nrspp.org.au/resources/human-error-in-road-accidents/">https://www.nrspp.org.au/resources/human-error-in-road-accidents/</a>&gt
-              </p>
-              <br>
-              <br>
+            <p>Dohmse, G 2015, <i>Machine Learning BE Computer 2015 PAT A Y</i>, SlideToDoc, viewed 1 April 2021,</p>
+            <p>
+              &lt<a href="https://slidetodoc.com/machine-learning-be-computer-2015-pat-a-y/">https://slidetodoc.com/machine-learning-be-computer-2015-pat-a-y/</a>&gt
+            </p>
+            <br>
+            <br>
 
-              <p>Parliament of Australia 2017, <i>Employment</i>, Parliament of Australia, viewed 8 April 2021,</p>
-              <p>
-                &lt<a href="https://www.aph.gov.au/Parliamentary_Business/Committees/House/Industry_Innovation_Science_and_Resources/Driverless_vehicles/Report/section?id=committees%2freportrep%2f024056%2f24940">https://www.aph.gov.au/Parliamentary_Business/Committees/House/Industry_Innovation_Science_and_Resources/Driverless_vehicles/Report/section?id=committees%2freportrep%2f024056%2f24940</a>&gt
-              </p>
-              <br>
-              <br>
+
+            <p>Earth Observing Laboratory n.d, <i>How Do Radars Work?</i>, National Center for Atmospheric Research, viewed 3 April 2021,</p>
+            <p>
+              &lt<a href="https://www.eol.ucar.edu/content/how-do-radars-work">https://www.eol.ucar.edu/content/how-do-radars-work</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+            <p>Elezaj, R 2021, <i>Surprising Ways How Driverless Cars Will Change Our Future</i>, Machine Design, viewed 3 April 2021,</p>
+            <p>
+              &lt<a
+                href="https://www.machinedesign.com/mechanical-motion-systems/article/21837191/surprising-ways-how-driverless-cars-will-change-our-future">https://www.machinedesign.com/mechanical-motion-systems/article/21837191/surprising-ways-how-driverless-cars-will-change-our-future</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+            <p>Green, M & Senders, J 2013, <i>Human Error In Road Accidents</i>, National Road Safety Partnership Program (NRSPP), viewed 2 April 2021,</p>
+            <p>
+              &lt<a href="https://www.nrspp.org.au/resources/human-error-in-road-accidents/">https://www.nrspp.org.au/resources/human-error-in-road-accidents/</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+            <p>Holtzer, G n.d, <i>How Does a Camera Work?</i>, Expert Photography, viewed 3 April 2021,</p>
+            <p>
+              &lt<a href="https://expertphotography.com/how-does-a-camera-work">https://expertphotography.com/how-does-a-camera-work</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+            <p>IBM 2020, <i>Machine Learning</i>, IBM, viewed 3 April 2021,</p>
+            <p>
+              &lt<a href="https://www.ibm.com/cloud/learn/machine-learning">https://www.ibm.com/cloud/learn/machine-learning</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+
+            <p>National Highway Traffic Safety Administration 2020, <i>Automated Vehicles for Safety</i>, NHTSA, viewed 1 April 2021,</p>
+            <p>
+              &lt<a href="https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety">https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+            <p>National Ocean Service n.d, <i>What is lidar?</i>, NOAA, viewed 2 April 2021,</p>
+            <p>
+              &lt<a href="https://oceanservice.noaa.gov/facts/lidar.html">https://oceanservice.noaa.gov/facts/lidar.html</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+            <p>Parliament of Australia 2017, <i>Employment</i>, Parliament of Australia, viewed 8 April 2021,</p>
+            <p>
+              &lt<a
+                href="https://www.aph.gov.au/Parliamentary_Business/Committees/House/Industry_Innovation_Science_and_Resources/Driverless_vehicles/Report/section?id=committees%2freportrep%2f024056%2f24940">https://www.aph.gov.au/Parliamentary_Business/Committees/House/Industry_Innovation_Science_and_Resources/Driverless_vehicles/Report/section?id=committees%2freportrep%2f024056%2f24940</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+
+            <p>RAC n.d, <i>The Vehicle</i>, RAC, viewed 1 April 2021,</p>
+            <p>
+              &lt<a href="https://rac.com.au/about-rac/advocating-change/initiatives/automated-vehicle-program/intellibus/the-vehicle">https://rac.com.au/about-rac/advocating-change/initiatives/automated-vehicle-program/intellibus/the-vehicle</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+
+
+
+            <p>Skolnik, M n.d., <i>Radar</i>, Brittanica, viewed 2 April 2021,</p>
+            <p>
+              &lt<a href="https://www.britannica.com/technology/radar">https://www.britannica.com/technology/radar</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+
+            <p>World Health Organization 2020, <i>Road traffic injuries?</i>, World Health Organization (WHO) 2020, viewed 4 April 2021,</p>
+            <p>
+              &lt<a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries">https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries</a>&gt
+            </p>
+            <br>
+            <br>
+
+
+
           </article>
         </section>
 
         <section id="section2">
-          <h1>Blockchain & Cryptocurrencies</h1>
+          <h1 id="scrolltoBC">Blockchain & Cryptocurrencies</h1>
           <br>
+
           <article>
             <h3>What is the state of the art of this new technology?</h3>
             <br>
 
-            <p>Cryptocurrency and blockchain technologies have been on a rapid rise for some time now and there seems to be no indication that this is slowing down anytime soon. The core concept behind the use of such technologies is the transference of all transactions onto a digital space that allows users the freedom to perform such transactions from anywhere around the world without having to bypass the control of a mediator (Shrivastava et al. 2020). This means that any finances, contracts or records you wish to store or transfer, occurs across a global and decentralised platform; this essentially shortcuts the process and negates the need to bypass traditional means such as a bank or other intermediary organisations, or potentially risk having it monopolised by government authorities and corporations (Nasir et al. 2021; Shrivastava et al. 2020).</p>
+            <p>Cryptocurrency and blockchain technologies have been on a rapid rise for some time now and there seems to be no indication that this is slowing down anytime soon. The core concept behind the use of such technologies is the transference
+              of all transactions onto a digital space that allows users the freedom to perform such transactions from anywhere around the world without having to bypass the control of a mediator (Shrivastava et al. 2020). This means that any
+              finances, contracts or records you wish to store or transfer, occurs across a global and decentralised platform; this essentially shortcuts the process and negates the need to bypass traditional means such as a bank or other
+              intermediary organisations, or potentially risk having it monopolised by government authorities and corporations (Nasir et al. 2021; Shrivastava et al. 2020).
+              <!--Article should be hidden and appear on click -->
+              <button class="expandButton" onclick="expandBC()">Click here to read more!</button>
+            </p>
+          </article>
+          <article id="expandarticleBC">
             <br>
 
-            <p>Taken broadly, the blockchain can be viewed as the tool or principle, often likened to that of a database, that allows cryptocurrencies to thrive (Conway 2020; Marr 2021; Shrivastava et al. 2020, p. xxi). However, unlike a database which is formatted as a table, a blockchain network utilises ‘blocks’ to accumulate information or data which, when filled, is then linked up to the last block to create the ‘chain’, thus ‘blockchain’ (Conway 2020). The blockchain is built chronologically and is unable to be retrospectively altered, which is part of the reason why it is considered secure, as there is a transparent and ordered history of all transactions ever made (Conway 2020). Blockchains can store different types of information, however, to date, they have most commonly been used for cryptocurrency ledgers for transactions, the most successful being Bitcoin (Conway 2020; Economic Times 2021).</p>
+            <p>Taken broadly, the blockchain can be viewed as the tool or principle, often likened to that of a database, that allows cryptocurrencies to thrive (Conway 2020; Marr 2021; Shrivastava et al. 2020, p. xxi). However, unlike a database
+              which is formatted as a table, a blockchain network utilises ‘blocks’ to accumulate information or data which, when filled, is then linked up to the last block to create the ‘chain’, thus ‘blockchain’ (Conway 2020). The blockchain is
+              built chronologically and is unable to be retrospectively altered, which is part of the reason why it is considered secure, as there is a transparent and ordered history of all transactions ever made (Conway 2020). Blockchains can store
+              different types of information, however, to date, they have most commonly been used for cryptocurrency ledgers for transactions, the most successful being Bitcoin (Conway 2020; Economic Times 2021).</p>
             <br>
 
-            <p>It is somewhat necessary to allude to Bitcoin when explaining what cryptocurrency allows us to do. This is perhaps due to the significant role Bitcoin has played in pioneering the momentum of crypto, as well as blockchain popularity, since its inception back in 2008 (Built In 2019; Conway 2021). Back then, the anonymous creator/s of Bitcoin, alias Satoshi Nakamoto presented the world with a computer algorithm referred to as ‘a new electronic cash system that’s fully peer-to-peer, with no trusted third party’ (Conway 2020). This new form of currency takes the form of a ‘coin’ or a ‘token’ whereby the ‘crypto’ refers to the complex cryptography attached to the digital currency and relative de-centralised transactions (Built In 2019). Digital currencies that are then adapted after Bitcoins are called ‘altcoins’; altcoins fundamentally work in the same way but were designed in an attempt to improve and refine the functionality and efficiency of Bitcoins, however, it seems that none of these alternatives seem to be as secure as Bitcoin’s processes (Built In 2019). This is in part due to the fact that security is dependent on the number of users; the more users the more secure the network becomes (Hammer 2021).
+            <p>It is somewhat necessary to allude to Bitcoin when explaining what cryptocurrency allows us to do. This is perhaps due to the significant role Bitcoin has played in pioneering the momentum of crypto, as well as blockchain popularity,
+              since its inception back in 2008 (Built In 2019; Conway 2021). Back then, the anonymous creator/s of Bitcoin, alias Satoshi Nakamoto presented the world with a computer algorithm referred to as ‘a new electronic cash system that’s fully
+              peer-to-peer, with no trusted third party’ (Conway 2020). This new form of currency takes the form of a ‘coin’ or a ‘token’ whereby the ‘crypto’ refers to the complex cryptography attached to the digital currency and relative
+              de-centralised transactions (Built In 2019). Digital currencies that are then adapted after Bitcoins are called ‘altcoins’; altcoins fundamentally work in the same way but were designed in an attempt to improve and refine the
+              functionality and efficiency of Bitcoins, however, it seems that none of these alternatives seem to be as secure as Bitcoin’s processes (Built In 2019). This is in part due to the fact that security is dependent on the number of users;
+              the more users the more secure the network becomes (Hammer 2021).
             </p>
             <br>
 
             <h3>What can be done now?</h3>
             <br>
 
-            <p>Today, Bitcoin being the largest cryptocurrency has a value over $1 trillion and is still the most popular digital currency (Economic Times 2021), and again, trust and security are hypothesised as being the most attractive aspect of the Bitcoin economy compared to its alternatives (Economic Times 2021; Hammer 2021; Nasir et al. 2021, p. 993). Bitcoin runs through a process of ongoing validations and effectively logs these validations onto the blockchain, called ‘mining the blocks’ (Hammer 2021). A timestamp, otherwise called a ‘nonce’, is attached to the block as well as a citation of the previous block using a unique cryptographic fingerprint called a ‘hash’ (Hammer 2021). In order to create each individual block on the blockchain, miners must decode the hash algorithm in order to confirm a transaction as legitimate - a process called ‘proof of work’ (Hammer 2021). Building upon this, and to make the process even more efficient, ‘proof of stake’ came into realisation and was presented as an alternative whereby the miner can only mine whatever amount they have staked in the cryptocurrency; for example, if a miner holds 2% in Bitcoin, they are only limited to mining 2% of the blocks (Hammer 2021). In this case, security is premised on the fact that if someone had a financial stake in Bitcoin they would only act out of self-interest (Hammer 2021).
+            <p>Today, Bitcoin being the largest cryptocurrency has a value over $1 trillion and is still the most popular digital currency (Economic Times 2021), and again, trust and security are hypothesised as being the most attractive aspect of
+              the Bitcoin economy compared to its alternatives (Economic Times 2021; Hammer 2021; Nasir et al. 2021, p. 993). Bitcoin runs through a process of ongoing validations and effectively logs these validations onto the blockchain, called
+              ‘mining the blocks’ (Hammer 2021). A timestamp, otherwise called a ‘nonce’, is attached to the block as well as a citation of the previous block using a unique cryptographic fingerprint called a ‘hash’ (Hammer 2021). In order to create
+              each individual block on the blockchain, miners must decode the hash algorithm in order to confirm a transaction as legitimate - a process called ‘proof of work’ (Hammer 2021). Building upon this, and to make the process even more
+              efficient, ‘proof of stake’ came into realisation and was presented as an alternative whereby the miner can only mine whatever amount they have staked in the cryptocurrency; for example, if a miner holds 2% in Bitcoin, they are only
+              limited to mining 2% of the blocks (Hammer 2021). In this case, security is premised on the fact that if someone had a financial stake in Bitcoin they would only act out of self-interest (Hammer 2021).
             </p>
             <br>
 
-            <p>Additionally, Bitcoin works on a decentralised platform formed by a vast network of computers, referred to as ‘nodes’, which transparently records the history of all previous transactions (Conway 2020). In the case of hackers, this means that if someone wanted to corrupt the system, all the nodes in the network would cross-reference and be able to nullify the corrupted record and copy, or ‘fork’ off, into a new chain that would make the previous one useless (Conway 2020). Essentially, Bitcoin was built to ensure that it is more economically viable to participate in the system than to break it (Conway 2020).</p>
+            <p>Additionally, Bitcoin works on a decentralised platform formed by a vast network of computers, referred to as ‘nodes’, which transparently records the history of all previous transactions (Conway 2020). In the case of hackers, this
+              means that if someone wanted to corrupt the system, all the nodes in the network would cross-reference and be able to nullify the corrupted record and copy, or ‘fork’ off, into a new chain that would make the previous one useless
+              (Conway 2020). Essentially, Bitcoin was built to ensure that it is more economically viable to participate in the system than to break it (Conway 2020).</p>
             <br>
 
             <h3>What is likely to be able to be done soon?</h3>
             <br>
 
-            <p>Blockchain capabilities are not limited to cryptocurrencies. Currently, research is being done on a global scale, to utilise blockchain technologies for uses beyond the financial sector – see Figure 1 (Conway 2020; Shrivastava et al. 2020, p. xxi; Nasir et al. 2021). Bitcoin, one type of cryptocurrency, uses blockchain to document transactions, however, blockchain can also be potentially utilised to record other types of information or data such as, and not limited to, electoral votes, smart contracts, healthcare records, vaccine distribution and tracking, supply chains, even perhaps Internet of Things and more (Conway 2020; Marr 2021; Shrivastava et al. 2020).</p>
+            <p>Blockchain capabilities are not limited to cryptocurrencies. Currently, research is being done on a global scale, to utilise blockchain technologies for uses beyond the financial sector – see Figure 1 (Conway 2020; Shrivastava et al.
+              2020, p. xxi; Nasir et al. 2021). Bitcoin, one type of cryptocurrency, uses blockchain to document transactions, however, blockchain can also be potentially utilised to record other types of information or data such as, and not limited
+              to, electoral votes, smart contracts, healthcare records, vaccine distribution and tracking, supply chains, even perhaps Internet of Things and more (Conway 2020; Marr 2021; Shrivastava et al. 2020).</p>
             <img class="imgMid" src="../assets/content/it_technologies/Blockchain & Cryptocurrencies/cooccurence_network.png">
-            <p><b>Figure 1:</b>  Co-occurrence network infographic showing the areas with most research being done currently  by Nasir et al., 2021.</p>
+            <p><b>Figure 1:</b> Co-occurrence network infographic showing the areas with most research being done currently by Nasir et al., 2021.</p>
             <br>
 
             <h3>What technological or other developments make this possible? </h3>
             <br>
 
-            <p>The current state of affairs sees a multitude of companies allowing the authorisation of cryptocurrencies as an alternative payment method. For example, on 30thMarch, 2021, PayPal launched its ‘crypto checkout service’ so that U.S citizens can convert bitcoin cash or litecoin into fiat money to purchase online goods and services (CNBC 2021). Similarly, Elon Musk announced the allowance of Bitcoin to be used to purchase Tesla vehicles whilst corporations such as Visa have announced their investment into Ethereum, second largest cryptocurrency to Bitcoin (Ponciano 2021).</p>
+            <p>The current state of affairs sees a multitude of companies allowing the authorisation of cryptocurrencies as an alternative payment method. For example, on 30thMarch, 2021, PayPal launched its ‘crypto checkout service’ so that U.S
+              citizens can convert bitcoin cash or litecoin into fiat money to purchase online goods and services (CNBC 2021). Similarly, Elon Musk announced the allowance of Bitcoin to be used to purchase Tesla vehicles whilst corporations such as
+              Visa have announced their investment into Ethereum, second largest cryptocurrency to Bitcoin (Ponciano 2021).</p>
             <br>
 
-            <p>It is also important to note here that such developments may come to a stop due to governments and other authority figures catching on to regulation surrounding the legalities of cryptocurrencies (Ponciano 2021). However, currently Bitcoin and other cryptocurrencies are somewhat unregulated globally as shown in Figure 2 below (Nasir et al.2021).</p>
+            <p>It is also important to note here that such developments may come to a stop due to governments and other authority figures catching on to regulation surrounding the legalities of cryptocurrencies (Ponciano 2021). However, currently
+              Bitcoin and other cryptocurrencies are somewhat unregulated globally as shown in Figure 2 below (Nasir et al.2021).</p>
             <br>
 
             <img class="imgMid" src="../assets/content/it_technologies/Blockchain & Cryptocurrencies/legalmap_crypto.png">
-            <p><b>Figure 2:</b> Global map depicting where Bitcoin and other cryptocurrencies are legal  by Nasir et al., 2021.</p>
+            <p><b>Figure 2:</b> Global map depicting where Bitcoin and other cryptocurrencies are legal by Nasir et al., 2021.</p>
             <br>
 
-            <p>If blockchain and cryptocurrency were to become the most widely used method for transactions, this could significantly impact a variety of sectors such as: politics and governance; banks and corporations; as well as a need to develop or invest into more sustainable and renewable resources which we are already urgently in need of (Shrivastava et al. 2020).</p>
+            <h3>What is the likely impact?</h3>
             <br>
 
-            <p>While the crypto industry is arguably useful for many as it allows us to borrow, lend, and invest more equally, securely and efficiently, it also generates some crucial issues in terms of regulation and accountability (Nasir et al. 2021; Salami 2020). Due to the decentralized nature of cryptocurrencies, say Bitcoin or DeFi, it is unclear how authorities would be able to determine who is accountable for any security lapses (Salami 2020). Furthermore, if any of these cryptocurrencies were potentially hacked anonymously the entire network would disintegrate (Salami 2020). Another regulatory issue here is that, again, due to its global framework, people might gravitate towards countries that have lesser regulatory governance than their own (Salami 2020). Perhaps most difficult of all is the ability for governments and authorities to effectively regulate cryptocurrencies at all?</p>
+            <p>If blockchain and cryptocurrency were to become the most widely used method for transactions, this could significantly impact a variety of sectors such as: politics and governance; banks and corporations; as well as a need to develop
+              or invest into more sustainable and renewable resources which we are already urgently in need of (Shrivastava et al. 2020).</p>
             <br>
 
-            <p>It is also necessary to underline the affects this might have in the business and financial sector. The problem here is that while it may seem attractive for society to no longer have much of a need for intermediaries, such as banks and other financial institutions, the job loss in this sector would be immense. If such a speculation becomes the new global reality, it would take a while for society to be able to adapt to such changes; for example, if you look at the history of when automobiles were first introduced into the market (History.com Editors 2018).</p>
+            <p>While the crypto industry is arguably useful for many as it allows us to borrow, lend, and invest more equally, securely and efficiently, it also generates some crucial issues in terms of regulation and accountability (Nasir et al.
+              2021; Salami 2020). Due to the decentralized nature of cryptocurrencies, say Bitcoin or DeFi, it is unclear how authorities would be able to determine who is accountable for any security lapses (Salami 2020). Furthermore, if any of
+              these cryptocurrencies were potentially hacked anonymously the entire network would disintegrate (Salami 2020). Another regulatory issue here is that, again, due to its global framework, people might gravitate towards countries that
+              have lesser regulatory governance than their own (Salami 2020). Perhaps most difficult of all is the ability for governments and authorities to effectively regulate cryptocurrencies at all?</p>
             <br>
 
-            <p>Of equal importance, the rise of cryptocurrencies creates a complex web of environmental concerns. Blockchain and cryptocurrency usage leaves us to question whether this will severely impact climate change as well as our dire over-reliance on non-renewable resources such as coal (Howsan 2021). While Bitcoin is already heavily scrutinized for its contribution to carbon emissions, as further energy is needed to power up more and more computers and systems, Bitcoin also specifically uses a hardware called ‘Application Specific Integrated Circuits’ which are often discarded and replaced yearly; ‘[redundant units create around 11,500 tonnes of hazardous electronic waste each year, much of which is dumped on cities in the global south’ (Howson 2021, para. 7). Even with all these issues being raised, it does not seem like Bitcoin investors have all taken to clean energy as currently ‘61% of bitcoin mining is powered by fossil fuels’ (Howsan 2021, para. 8). However, there are some alternative cryptocurrencies that are notably greener, such as Ethereum, in which proof-of-stake is primarily utilised and thus moving away from mining and hardware replacements (Howsan 2021).
+            <p>It is also necessary to underline the affects this might have in the business and financial sector. The problem here is that while it may seem attractive for society to no longer have much of a need for intermediaries, such as banks
+              and other financial institutions, the job loss in this sector would be immense. If such a speculation becomes the new global reality, it would take a while for society to be able to adapt to such changes; for example, if you look at the
+              history of when automobiles were first introduced into the market (History.com Editors 2018).</p>
+            <br>
+
+            <p>Of equal importance, the rise of cryptocurrencies creates a complex web of environmental concerns. Blockchain and cryptocurrency usage leaves us to question whether this will severely impact climate change as well as our dire
+              over-reliance on non-renewable resources such as coal (Howsan 2021). While Bitcoin is already heavily scrutinized for its contribution to carbon emissions, as further energy is needed to power up more and more computers and systems,
+              Bitcoin also specifically uses a hardware called ‘Application Specific Integrated Circuits’ which are often discarded and replaced yearly; ‘[redundant units create around 11,500 tonnes of hazardous electronic waste each year, much of
+              which is dumped on cities in the global south’ (Howson 2021, para. 7). Even with all these issues being raised, it does not seem like Bitcoin investors have all taken to clean energy as currently ‘61% of bitcoin mining is powered by
+              fossil fuels’ (Howsan 2021, para. 8). However, there are some alternative cryptocurrencies that are notably greener, such as Ethereum, in which proof-of-stake is primarily utilised and thus moving away from mining and hardware
+              replacements (Howsan 2021).
             </p>
             <br>
 
             <h3>How will this affect you?</h3>
             <br>
 
-            <p>In summary, the most alluring aspect of blockchain and cryptocurrencies is the decentralised nature of being able to manage and invest my finances over the internet. In my daily life I tend to do all my banking or transfers online. Even then, the transfer of funds, especially internationally, is nowhere near as efficient or as secure as it could potentially be - not to mention it is also heavily monopolised by financial institutions. Additionally, due to external mechanics such as inflation, my savings pretty much sits in the bank and slowly devalues over time; if I were to invest a certain amount of my savings into a cryptocurrency, obviously weighing up the pro’s and con’s as well as the risks involved, it would be much more economically beneficial for me in the long run.</p>
+            <p>In summary, the most alluring aspect of blockchain and cryptocurrencies is the decentralised nature of being able to manage and invest my finances over the internet. In my daily life I tend to do all my banking or transfers online.
+              Even then, the transfer of funds, especially internationally, is nowhere near as efficient or as secure as it could potentially be - not to mention it is also heavily monopolised by financial institutions. Additionally, due to external
+              mechanics such as inflation, my savings pretty much sits in the bank and slowly devalues over time; if I were to invest a certain amount of my savings into a cryptocurrency, obviously weighing up the pro’s and con’s as well as the risks
+              involved, it would be much more economically beneficial for me in the long run.</p>
             <br>
 
-            <p>This will be relatively similar for my family and friends. From my knowledge, some of my family and friends still rely on more traditional means of banking and opt to physically make their way over to a bank in order to perform their transactions. While it may seem arduous to do so, it is understandable that some may feel a lack of trust in transferring of funds over the internet. As with most things, it will take a while for society to be comfortable with such changes and to believe that a new way could be better. In saying that, it is not without an undertone of scepticism that perhaps sometimes we implement changes so fast before we even realise what we have created and what to do about it.</p>
+            <p>This will be relatively similar for my family and friends. From my knowledge, some of my family and friends still rely on more traditional means of banking and opt to physically make their way over to a bank in order to perform their
+              transactions. While it may seem arduous to do so, it is understandable that some may feel a lack of trust in transferring of funds over the internet. As with most things, it will take a while for society to be comfortable with such
+              changes and to believe that a new way could be better. In saying that, it is not without an undertone of scepticism that perhaps sometimes we implement changes so fast before we even realise what we have created and what to do about it.
+            </p>
             <br>
 
             <h3>References</h3>
@@ -362,7 +479,8 @@
 
             <p>Business Wire 2021, <i>Global Blockchain and Cryptocurrency Market Report 2021: Ukraine and Russia Are Leading The Ranking of Cryptocurrency Adoption</i>, Business Wire, viewed 1 April 2021</p>
             <p>
-              &lt<a href="https://www.businesswire.com/news/home/20210331005682/en/Global-Blockchain-and-Cryptocurrency-Market-Report-2021-Ukraine-and-Russia-are-Leading-the-Ranking-of-Cryptocurrency-Adoption---ResearchAndMarkets.com">https://www.businesswire.com/news/home/20210331005682/en/Global-Blockchain-and-Cryptocurrency-Market-Report-2021-Ukraine-and-Russia-are-Leading-the-Ranking-of-Cryptocurrency-Adoption---ResearchAndMarkets.com</a>&gt
+              &lt<a
+                href="https://www.businesswire.com/news/home/20210331005682/en/Global-Blockchain-and-Cryptocurrency-Market-Report-2021-Ukraine-and-Russia-are-Leading-the-Ranking-of-Cryptocurrency-Adoption---ResearchAndMarkets.com">https://www.businesswire.com/news/home/20210331005682/en/Global-Blockchain-and-Cryptocurrency-Market-Report-2021-Ukraine-and-Russia-are-Leading-the-Ranking-of-Cryptocurrency-Adoption---ResearchAndMarkets.com</a>&gt
             </p>
             <br>
             <br>
@@ -390,21 +508,25 @@
 
             <p>Economic Times 2021, <i>Moving Beyond Bitcoin To The Next Crypto Revolution In 2021</i>, ET, viewed 1 April 2021</p>
             <p>
-              &lt<a href="https://economictimes.indiatimes.com/markets/stocks/news/moving-beyond-bitcoin-to-the-next-crypto-revolution-in-2021/articleshow/81773999.cms">https://economictimes.indiatimes.com/markets/stocks/news/moving-beyond-bitcoin-to-the-next-crypto-revolution-in-2021/articleshow/81773999.cms</a>&gt
+              &lt<a
+                href="https://economictimes.indiatimes.com/markets/stocks/news/moving-beyond-bitcoin-to-the-next-crypto-revolution-in-2021/articleshow/81773999.cms">https://economictimes.indiatimes.com/markets/stocks/news/moving-beyond-bitcoin-to-the-next-crypto-revolution-in-2021/articleshow/81773999.cms</a>&gt
             </p>
             <br>
             <br>
 
-            <p>Hammer, S 2021, <i>Cryptocurrency and Blockchain: An Introduction to Digital Currencies</i>, presentation, Fintech: Foundations and Applications of Financial Technology Specialization, University of Pennsylvania, viewed 31 March 2021</p>
+            <p>Hammer, S 2021, <i>Cryptocurrency and Blockchain: An Introduction to Digital Currencies</i>, presentation, Fintech: Foundations and Applications of Financial Technology Specialization, University of Pennsylvania, viewed 31 March 2021
+            </p>
             <p>
-              &lt<a href="https://www.coursera.org/lecture/wharton-cryptocurrency-blockchain-introduction-digital-currency/building-the-blockchain-eoRBc">https://www.coursera.org/lecture/wharton-cryptocurrency-blockchain-introduction-digital-currency/building-the-blockchain-eoRBc</a>&gt
+              &lt<a
+                href="https://www.coursera.org/lecture/wharton-cryptocurrency-blockchain-introduction-digital-currency/building-the-blockchain-eoRBc">https://www.coursera.org/lecture/wharton-cryptocurrency-blockchain-introduction-digital-currency/building-the-blockchain-eoRBc</a>&gt
             </p>
             <br>
             <br>
 
             <p>Howsan, P 2021, <i>Bitcoin Isn’t Getting Greener: Four Environmental Myths About Cryptocurrency Debunked</i>, The Conversation, viewed 5 April 2021</p>
             <p>
-              &lt<a href="https://theconversation.com/bitcoin-isnt-getting-greener-four-environmental-myths-about-cryptocurrency-debunked-155329">https://theconversation.com/bitcoin-isnt-getting-greener-four-environmental-myths-about-cryptocurrency-debunked-155329</a>&gt
+              &lt<a
+                href="https://theconversation.com/bitcoin-isnt-getting-greener-four-environmental-myths-about-cryptocurrency-debunked-155329">https://theconversation.com/bitcoin-isnt-getting-greener-four-environmental-myths-about-cryptocurrency-debunked-155329</a>&gt
             </p>
             <br>
             <br>
@@ -418,25 +540,29 @@
 
             <p>Marr, B 2021, <i>The Six Biggest Blockchain Trends Everyone Should Know About in 2021</i>, Forbes, viewed 30 March 2021</p>
             <p>
-              &lt<a href="https://www.forbes.com/sites/bernardmarr/2021/03/12/the-six-biggest-blockchain-trends-everyone-should-know-about-in-2021/?sh=78ea58f56631">https://www.forbes.com/sites/bernardmarr/2021/03/12/the-six-biggest-blockchain-trends-everyone-should-know-about-in-2021/?sh=78ea58f56631</a>&gt
+              &lt<a
+                href="https://www.forbes.com/sites/bernardmarr/2021/03/12/the-six-biggest-blockchain-trends-everyone-should-know-about-in-2021/?sh=78ea58f56631">https://www.forbes.com/sites/bernardmarr/2021/03/12/the-six-biggest-blockchain-trends-everyone-should-know-about-in-2021/?sh=78ea58f56631</a>&gt
             </p>
             <br>
             <br>
 
-            <p>Nasir, A, Shaukat, K, Khan, K, Hameed, I, Alam, T, & Luo, S 2021, <i>What is Core and What Future Holds for Blockchain Technologies and Cryptocurrencies: A Bibliometric Analysis</i>, IEEE, vol. 9, pp. 989-1004, viewed 2 April 2021, IEEE Access database.</p>
+            <p>Nasir, A, Shaukat, K, Khan, K, Hameed, I, Alam, T, & Luo, S 2021, <i>What is Core and What Future Holds for Blockchain Technologies and Cryptocurrencies: A Bibliometric Analysis</i>, IEEE, vol. 9, pp. 989-1004, viewed 2 April 2021,
+              IEEE Access database.</p>
             <br>
             <br>
 
             <p>Ponciano, J 2021, <i>Bitcoin Adds Back $150 Billion As Visa, PayPal Rev Up Crypto Offerings and Institutions “Buy the Dip”</i>, Forbes, viewed 1 April 2021</p>
             <p>
-              &lt<a href="https://www.forbes.com/sites/jonathanponciano/2021/03/30/bitcoin-adds-back-150-billion-as-visa-paypal-rev-up-crypto-offerings-and-institutions-buy-the-dip/?sh=774080fa8f0e">https://www.forbes.com/sites/jonathanponciano/2021/03/30/bitcoin-adds-back-150-billion-as-visa-paypal-rev-up-crypto-offerings-and-institutions-buy-the-dip/?sh=774080fa8f0e</a>&gt
+              &lt<a
+                href="https://www.forbes.com/sites/jonathanponciano/2021/03/30/bitcoin-adds-back-150-billion-as-visa-paypal-rev-up-crypto-offerings-and-institutions-buy-the-dip/?sh=774080fa8f0e">https://www.forbes.com/sites/jonathanponciano/2021/03/30/bitcoin-adds-back-150-billion-as-visa-paypal-rev-up-crypto-offerings-and-institutions-buy-the-dip/?sh=774080fa8f0e</a>&gt
             </p>
             <br>
             <br>
 
             <p>Salami, I 2020, <i>Decentralised Finance Calls Into Question Whether the Crypto Industry Can Ever Be Regulated</i>, The Conversation, viewed 5 April 2020</p>
             <p>
-              &lt<a href="https://theconversation.com/decentralised-finance-calls-into-question-whether-the-crypto-industry-can-ever-be-regulated-151222">https://theconversation.com/decentralised-finance-calls-into-question-whether-the-crypto-industry-can-ever-be-regulated-151222</a>&gt
+              &lt<a
+                href="https://theconversation.com/decentralised-finance-calls-into-question-whether-the-crypto-industry-can-ever-be-regulated-151222">https://theconversation.com/decentralised-finance-calls-into-question-whether-the-crypto-industry-can-ever-be-regulated-151222</a>&gt
             </p>
             <br>
             <br>
@@ -452,15 +578,30 @@
         </section>
 
         <section id="section1">
-          <h1>Cloud, Services and Servers</h1>
+          <h1 id="scrolltoCS">Cloud, Services and Servers</h1>
           <br>
+
           <article>
-            <p>A server is a computer or a program that provides all kinds of information to other computers over a network. Any computer utilising the right software and hardware could become a server. There are various methods to form a server in computer networks such as peer-to-peer networks, which involves two or more computers accessing individual resources, such as a hard drive or a printer (Best 2016, para. 2).</p>
-            <p>The Cloud refers to servers that are accessed over the internet as well as software and programs that run on those servers. Cloud also refers to the use of multiple computers and servers connected via the internet. This allows exchanging data as part of programs or services. We can use multiple computers to achieve complex tasks. This reduces the operating costs of the servers as it runs over the internet rather than on an individual computer server (Probrand n.d., para. 2).</p>
+            <h3>What is the Cloud?</h3>
+            <br>
+            <p>A server is a computer or a program that provides all kinds of information to other computers over a network. Any computer utilising the right software and hardware could become a server. There are various methods to form a server in
+              computer networks such as peer-to-peer networks, which involves two or more computers accessing individual resources, such as a hard drive or a printer (Best 2016, para. 2).
+              <!--Article should be hidden and appear on click -->
+              <button class="expandButton" onclick="expandCS()">Click here to read more!</button>
+            </p>
+          </article>
+
+          <article id="expandarticleCS">
+            <br>
+            <p>The Cloud refers to servers that are accessed over the internet as well as software and programs that run on those servers. Cloud also refers to the use of multiple computers and servers connected via the internet. This allows
+              exchanging data as part of programs or services. We can use multiple computers to achieve complex tasks. This reduces the operating costs of the servers as it runs over the internet rather than on an individual computer server (Probrand
+              n.d., para. 2).</p>
             <br>
 
             <h3>Cloud Services</h3>
-            <p>Cloud computing services run on a worldwide network of servers that are secure, reliable and fast. They are usually upgraded to the latest generation of computer hardware; this is beneficial over a single computer data server as it reduces network latency, and it has the potential for greater economic scale. These servers are isolated from our environment and thus reduces software and hardware issues. Any other cloud server user won't affect your cloud server; for instance, if another user overloads their cloud server it won't affect your server (Probrand n.d., para. 3).</p>
+            <p>Cloud computing services run on a worldwide network of servers that are secure, reliable and fast. They are usually upgraded to the latest generation of computer hardware; this is beneficial over a single computer data server as it
+              reduces network latency, and it has the potential for greater economic scale. These servers are isolated from our environment and thus reduces software and hardware issues. Any other cloud server user won't affect your cloud server; for
+              instance, if another user overloads their cloud server it won't affect your server (Probrand n.d., para. 3).</p>
             <br>
 
             <p>Most cloud computing services fall into four categories (Microsoft Azure n.d., para. 4):</p>
@@ -471,21 +612,29 @@
               <li><b>Software as a service:</b> It is a method for delivering software or servers over the internet. It is usually subscription-based and on-demand access for users.</li>
               <li><b>Serverless computing:</b> This cloud service lets developers focus on developing applications without spending time managing servers or infrastructure. The cloud will handle the setup and management of the server for you.</li>
             </ol>
-
-            <p>Cloud servers are more stable, scalable and usually avoid hardware issues resulting in reduced IT budgets needed to run them. Cloud computing is a big step forward from the traditional way businesses are run in the IT industry. Many cloud-based service providers, such as Microsoft Azure, let users host the web, share data and use software or applications requiring no knowledge about servers or how they operate (Microsoft Azure n.d, para. 2).</p>
+            <br>
+            <p>Cloud servers are more stable, scalable and usually avoid hardware issues resulting in reduced IT budgets needed to run them. Cloud computing is a big step forward from the traditional way businesses are run in the IT industry. Many
+              cloud-based service providers, such as Microsoft Azure, let users host the web, share data and use software or applications requiring no knowledge about servers or how they operate (Microsoft Azure n.d, para. 2).</p>
             <br>
 
             <h3>Future of Cloud Technology</h3>
             <br>
-            <p>It is not hard to predict that data generating in high volume every day by the companies and enterprises need larger servers. it is difficult and sometimes impossible to store them with security and integrity on their on-site physical servers. Most businesses require a server where they can store a large amount of data that they are generating each day, safely and securely. More and more enterprises are using cloud servers that will provide larger data centres with a lower budget rather than running physical on-site servers. Cloud services help to store data for companies by increasing their data centres at lower prices to accommodate the need for large data centres by companies and businesses (DataFlair n.d., para. 4).</p>
+            <p>It is not hard to predict that data generating in high volume every day by the companies and enterprises need larger servers. it is difficult and sometimes impossible to store them with security and integrity on their on-site physical
+              servers. Most businesses require a server where they can store a large amount of data that they are generating each day, safely and securely. More and more enterprises are using cloud servers that will provide larger data centres with a
+              lower budget rather than running physical on-site servers. Cloud services help to store data for companies by increasing their data centres at lower prices to accommodate the need for large data centres by companies and businesses
+              (DataFlair n.d., para. 4).</p>
             <br>
 
-            <p>Between the year 2018 and 2021, worldwide spending on public cloud services has grown from $160B to $277B which is a significant growth in the adoption of the cloud and its services. Bart McDonough, CEO of Agio, believes the recent rapid adoption of cloud is mainly due to the understanding of ‘ease of use and scalability’ of the technology (Saleem 2020, para. 1).</p>
+            <p>Between the year 2018 and 2021, worldwide spending on public cloud services has grown from $160B to $277B which is a significant growth in the adoption of the cloud and its services. Bart McDonough, CEO of Agio, believes the recent
+              rapid adoption of cloud is mainly due to the understanding of ‘ease of use and scalability’ of the technology (Saleem 2020, para. 1).</p>
             <br>
 
             <h3>Virtualisation</h3>
             <br>
-            <p>Virtualisation is the use of software to create an abstraction layer over the computer hardware to use elements of a single computer, to be divided into multiple computers. Each virtual machine runs its operating system and acts as an independent computer, even though it is running on just a portion of the actual computer hardware. Virtualisation allows more efficient utilisation of the physical computer hardware and allows a greater return on hardware investment. Cloud computing is a possibility due to virtualisation. By virtualising servers, storage and other physical data centres, cloud computing can offer virtualised servers that can be configured based on requirements needed, which speeds up IT operations and reduces costs by increasing infrastructure utilisation. As a result, this automation speeds up the process and reduces labour costs and human errors (IBM 2019, para. 1).</p>
+            <p>Virtualisation is the use of software to create an abstraction layer over the computer hardware to use elements of a single computer, to be divided into multiple computers. Each virtual machine runs its operating system and acts as an
+              independent computer, even though it is running on just a portion of the actual computer hardware. Virtualisation allows more efficient utilisation of the physical computer hardware and allows a greater return on hardware investment.
+              Cloud computing is a possibility due to virtualisation. By virtualising servers, storage and other physical data centres, cloud computing can offer virtualised servers that can be configured based on requirements needed, which speeds up
+              IT operations and reduces costs by increasing infrastructure utilisation. As a result, this automation speeds up the process and reduces labour costs and human errors (IBM 2019, para. 1).</p>
             <br>
 
             <h3>Impact of Cloud Computing </h3>
@@ -498,32 +647,42 @@
 
             <p><b>Cost reduction:</b> Cloud technology reduces the expenses as they are only acquired when it is required hence lowering the initial expenses and maintenance costs.</p>
             <p><b>Unlimited scalability:</b> Cloud technology allows for the clients to scale up or even scale down as per their requirements. There is no need to worry about the demands as it is very easy to acquire additional services.</p>
-            <p><b>Flexibility:</b> Cloud technology allows clients to decide which service they need and pay for accordingly, if any application provided by the cloud is not doing what the client needs, it is easy to switch to another cloud service provider.</p>
+            <p><b>Flexibility:</b> Cloud technology allows clients to decide which service they need and pay for accordingly, if any application provided by the cloud is not doing what the client needs, it is easy to switch to another cloud service
+              provider.</p>
             <p><b>Reliability:</b> Cloud services are available all the time and they can be accessed anywhere using any device. Cloud services usually include backup and recovery management service which makes this technology more reliable.</p>
             <br>
 
-            <p>With all the positive impacts in mind, there is a potential of wafting away of software in near future which means that, with excessive advancement of cloud computing, the applications become hardware-agnostic and make computing completely invisible (Durrani 2019, para. 10).</p>
+            <p>With all the positive impacts in mind, there is a potential of wafting away of software in near future which means that, with excessive advancement of cloud computing, the applications become hardware-agnostic and make computing
+              completely invisible (Durrani 2019, para. 10).</p>
             <br>
 
             <h3>Cloud Impacting Everyday Life</h3>
             <br>
 
-            <p>Cloud computing affects our life socially, the likes of YouTube and Google are proof of how people act and interact with others. From remote locations to the global centre stage, an event can reach all around the world by going viral. Anybody can report on events. Live news feeds are constantly streaming media. Keeping up with friends and family has never been easier (Ferkoun 2013, para. 2).</p>
+            <p>Cloud computing affects our life socially, the likes of YouTube and Google are proof of how people act and interact with others. From remote locations to the global centre stage, an event can reach all around the world by going viral.
+              Anybody can report on events. Live news feeds are constantly streaming media. Keeping up with friends and family has never been easier (Ferkoun 2013, para. 2).</p>
             <br>
 
-            <p>Cloud technology also offers other benefits to developing countries allowing them to run inexpensive databases that are readily available in the cloud which helps them to develop better infrastructures. For instance, the use of Cloud technology in the healthcare industry allows medical professionals to check patients’ status and follow-up with their treatments resulting in reduced operational costs and the removal of human error (Ferkoun 2013, para. 7).</p>
+            <p>Cloud technology also offers other benefits to developing countries allowing them to run inexpensive databases that are readily available in the cloud which helps them to develop better infrastructures. For instance, the use of Cloud
+              technology in the healthcare industry allows medical professionals to check patients’ status and follow-up with their treatments resulting in reduced operational costs and the removal of human error (Ferkoun 2013, para. 7).</p>
             <br>
 
             <h3>Impacts Of Cloud Computing On My Life</h3>
             <br>
 
-            <p>Cloud computing affects my life as it does to everybody else. As a student, I can enrol on my classes online from anywhere and anytime, access class information on my phone anywhere and attend my classes online as well as participate in group activities. I can also pay my tuition fees online and get my payment confirmation in seconds. As for entertainment, watching Netflix and having access to thousands of movies and tv shows on my phone or smart tv as well as playing video games which I can download and play without the need of any physical copy of the game, are all impacts of cloud computing on my personal life (Ferkoun 2013, para. 2).</p>
+            <p>Cloud computing affects my life as it does to everybody else. As a student, I can enrol on my classes online from anywhere and anytime, access class information on my phone anywhere and attend my classes online as well as participate
+              in group activities. I can also pay my tuition fees online and get my payment confirmation in seconds. As for entertainment, watching Netflix and having access to thousands of movies and tv shows on my phone or smart tv as well as
+              playing video games which I can download and play without the need of any physical copy of the game, are all impacts of cloud computing on my personal life (Ferkoun 2013, para. 2).</p>
             <br>
 
-            <p>Cloud makes a huge difference in my day-to-day life, I can connect with my family and friends, using Facebook or other social media platforms, without the need of meeting them physically or leaving my house. I will have access to all the restaurants near me to order food and have it delivered to me. With the likes of iCloud, I can purchase an application on my phone, and have it downloaded on my iPad or continue what I have been doing on my computer or on my phone.</p>
+            <p>Cloud makes a huge difference in my day-to-day life, I can connect with my family and friends, using Facebook or other social media platforms, without the need of meeting them physically or leaving my house. I will have access to all
+              the restaurants near me to order food and have it delivered to me. With the likes of iCloud, I can purchase an application on my phone, and have it downloaded on my iPad or continue what I have been doing on my computer or on my phone.
+            </p>
             <br>
 
-            <p>Director of Empower IT Salim Sukari says, ‘It really is impossible to avoid the cloud. It has become so prevalent in daily life that it exists and is used without us even knowing it. Many of everyday life’s conveniences are in one way or another connected to cloud technology. Yet, many small businesses don’t always equate this prevalence in everyday life to its business potential. However, once you understand how the cloud has improved daily life’ (Baker 2016, para. 11). In fact, the cloud has become so pervasive that sometimes we don’t even realise that we are using it.</p>
+            <p>Director of Empower IT Salim Sukari says, ‘It really is impossible to avoid the cloud. It has become so prevalent in daily life that it exists and is used without us even knowing it. Many of everyday life’s conveniences are in one way
+              or another connected to cloud technology. Yet, many small businesses don’t always equate this prevalence in everyday life to its business potential. However, once you understand how the cloud has improved daily life’ (Baker 2016, para.
+              11). In fact, the cloud has become so pervasive that sometimes we don’t even realise that we are using it.</p>
             <br>
 
             <h3>References</h3>
@@ -531,7 +690,8 @@
 
             <p>Ahmad Dar, A 2018, ‘Cloud Computing-positive Impacts and Challenges In Business Perspective</i>, Journal of Computer Science & Systems Biology, PDF document, viewed 4 April 2021</p>
             <p>
-              &lt<a href="https://www.hilarispublisher.com/open-access/cloud-computingpositive-impacts-and-challenges-in-business-perspective-jcsb-1000294.pdf">https://www.hilarispublisher.com/open-access/cloud-computingpositive-impacts-and-challenges-in-business-perspective-jcsb-1000294.pdf</a>&gt
+              &lt<a
+                href="https://www.hilarispublisher.com/open-access/cloud-computingpositive-impacts-and-challenges-in-business-perspective-jcsb-1000294.pdf">https://www.hilarispublisher.com/open-access/cloud-computingpositive-impacts-and-challenges-in-business-perspective-jcsb-1000294.pdf</a>&gt
             </p>
             <br>
             <br>
@@ -557,16 +717,19 @@
             <br>
             <br>
 
-            <p>Data Flair n.d., <p>Future Of Cloud Computing – 7 Trends & Prediction About Cloud</p>, Data Flair, blog post, n.d., viewed 29 March 2021</p>
+            <p>Data Flair n.d.,
+            <p>Future Of Cloud Computing – 7 Trends & Prediction About Cloud</p>, Data Flair, blog post, n.d., viewed 29 March 2021</p>
             <p>
-              &lt<a href="https://data-flair.training/blogs/future-of-cloud-computing/#:~:text=Today%2C%20we%20can%20connect%20everything,to%20create%20hybrid%20IT%20solutions">https://data-flair.training/blogs/future-of-cloud-computing/#:~:text=Today%2C%20we%20can%20connect%20everything,to%20create%20hybrid%20IT%20solutions</a>&gt
+              &lt<a
+                href="https://data-flair.training/blogs/future-of-cloud-computing/#:~:text=Today%2C%20we%20can%20connect%20everything,to%20create%20hybrid%20IT%20solutions">https://data-flair.training/blogs/future-of-cloud-computing/#:~:text=Today%2C%20we%20can%20connect%20everything,to%20create%20hybrid%20IT%20solutions</a>&gt
             </p>
             <br>
             <br>
 
             <p>Durrani, K 2019, <i>What Is The Future of Cloud Computing and How You Can Help Your Company to Prepare?</i>, Colocation America, blog post, 22 April, viewed 8 April 2021</p>
             <p>
-              &lt<a href="https://www.colocationamerica.com/blog/cloud-computing-future-for-business#:~:text=Cloud%20computing%20provides%20secure%20access,of%20security%20to%20distributed%20data.&text=Offline%20accessibility%20of%20data%20with,resources%20for%20faster%20network%2">https://www.colocationamerica.com/blog/cloud-computing-future-for-business#:~:text=Cloud%20computing%20provides%20secure%20access,of%20security%20to%20distributed%20data.&text=Offline%20accessibility%20of%20data%20with,resources%20for%20faster%20network%2</a>&gt
+              &lt<a
+                href="https://www.colocationamerica.com/blog/cloud-computing-future-for-business#:~:text=Cloud%20computing%20provides%20secure%20access,of%20security%20to%20distributed%20data.&text=Offline%20accessibility%20of%20data%20with,resources%20for%20faster%20network%2">https://www.colocationamerica.com/blog/cloud-computing-future-for-business#:~:text=Cloud%20computing%20provides%20secure%20access,of%20security%20to%20distributed%20data.&text=Offline%20accessibility%20of%20data%20with,resources%20for%20faster%20network%2</a>&gt
             </p>
             <br>
             <br>
@@ -610,15 +773,26 @@
         </section>
 
         <section id="section4">
-          <h1>Machine Learning</h1>
+          <h1 id="scrolltoML">Machine Learning</h1>
           <br>
           <article>
             <h3>What does it do?</h3>
             <br>
-            <p>Alan Turing was the first to propose that should a digital computer be capable of imitating the behaviour of a human to a degree it was indistinguishable from an actual person, it could reasonably be assumed to be exhibiting ‘intelligence’ (Turing 1950). Despite our efforts and technological advancements in the seventy years since, no AI has come close passing the so-called Turing Test; mostly limited to narrow domains (Panova 2021) and lacking the capacity to make causal inferences (Dickson 2021), modern AIs are simply not yet capable of replicating the complexity of human behaviour.</p>
+            <p>Alan Turing was the first to propose that should a digital computer be capable of imitating the behaviour of a human to a degree it was indistinguishable from an actual person, it could reasonably be assumed to be exhibiting
+              ‘intelligence’ (Turing 1950). Despite our efforts and technological advancements in the seventy years since, no AI has come close passing the so-called Turing Test; mostly limited to narrow domains (Panova 2021) and lacking the capacity
+              to make causal inferences (Dickson 2021), modern AIs are simply not yet capable of replicating the complexity of human behaviour.
+              <!--Article should be hidden and appear on click -->
+              <button class="expandButton" onclick="expandML()">Click here to read more!</button>
+            </p>
+          </article>
+
+
+          <article id="expandarticleML">
             <br>
 
-            <p>Having said this, the goals of the field pioneered by Turing have perhaps shifted from imitating human behaviour, to augmenting human intelligence (Pretz 2021). Machine Learning (ML) is a branch of AI focused on how machines can employ experience to improve and adapt. By analysing massive data sets, ML is providing ways to improve human understanding by combining data from a wide range of sources, detecting patterns within this data, and suggesting potential responses (Pretz 2021).</p>
+            <p>Having said this, the goals of the field pioneered by Turing have perhaps shifted from imitating human behaviour, to augmenting human intelligence (Pretz 2021). Machine Learning (ML) is a branch of AI focused on how machines can employ
+              experience to improve and adapt. By analysing massive data sets, ML is providing ways to improve human understanding by combining data from a wide range of sources, detecting patterns within this data, and suggesting potential responses
+              (Pretz 2021).</p>
             <br>
 
             <div>
@@ -627,52 +801,85 @@
                 <p><b>Figure 1:</b> Supervised Learning by Soni, 2018.</p>
               </div>
               <div>
-                <p>In supervised ML, a machine is provided with an algorithm, based on statistical modelling, as seen in Figure 1 (Soni 2018), which it uses classification or regression to make ‘decisions’; using the ML’s output, developers then refine their algorithms and continue this iterative process from the beginning (Soni 2018), continually improving the machine’s capacity to accurately interpret and respond to information.</p>
+                <p>In supervised ML, a machine is provided with an algorithm, based on statistical modelling, as seen in Figure 1 (Soni 2018), which it uses classification or regression to make ‘decisions’; using the ML’s output, developers then
+                  refine their algorithms and continue this iterative process from the beginning (Soni 2018), continually improving the machine’s capacity to accurately interpret and respond to information.</p>
               </div>
             </div>
 
             <br>
-            <p>In effect, in ML a computer learns in similar fashion to a human, through the experience of making mistakes, and consequently discarding incorrect assumptions. Unlike supervised ML, unsupervised ML does not aim to make predictions based on present knowledge; rather, its purpose is to analyse data for patterns hitherto undetected, as illustrated in Figure 2 (Soni 2018), and the machine is at no point provided with corrections (Li 2021). In this sense, unsupervised ML is exploratory in that it is unfettered by current human understanding, creating avenues to expand our knowledge.</p>
+            <p>In effect, in ML a computer learns in similar fashion to a human, through the experience of making mistakes, and consequently discarding incorrect assumptions. Unlike supervised ML, unsupervised ML does not aim to make predictions
+              based on present knowledge; rather, its purpose is to analyse data for patterns hitherto undetected, as illustrated in Figure 2 (Soni 2018), and the machine is at no point provided with corrections (Li 2021). In this sense, unsupervised
+              ML is exploratory in that it is unfettered by current human understanding, creating avenues to expand our knowledge.</p>
             <br>
 
             <img src="../assets/content/it_technologies/Machine Learning/unsupervised_learning.png">
             <p><b>Figure 2:</b> Unsupervised Learning by Soni, 2018.</p>
             <br>
 
-            <p>Given society’s ever-increasing reliance on data, ML has become vital to modern-day economies. From autonomous vehicles and robot-run warehouses, through to the analysis of customer data and fraud detection, ML is impacting the lives of billions of people globally. Perhaps the most well-known use of ML occurs in driverless vehicles, which are currently using neural networks to classify objects, predict other driver’s actions and efficiently navigate to destinations; with their ability to process data more than 1GB per second, such systems are analysing their surrounds with much greater accuracy than vision-based systems (Ors 2020). Leveraging the statistic that eighty per cent of people prefer personalised shopping experiences, retailers are increasingly employing ML alongside visitor profile data to create targeted promotions and customised experiences for their patrons, managing their stock and retargeting people who did not make a purchase but are open to persuasion (Gray 2020). Similarly, entertainment companies are using ML to present relevant content to their customers while the banking and finance sector utilises similar techniques to analyse consumer sentiment and, in turn, make predictions about investment risks and returns (Gupta 2021). In the field of healthcare, researchers are using ML algorithms to create knowledge graphs, predict interactions between molecules and drugs, and explore the efficacy of new medications; this means that pre-phase trials are often avoidable and thus increases the rate at which new treatments become available (Anadiotis 2021).
+            <p>Given society’s ever-increasing reliance on data, ML has become vital to modern-day economies. From autonomous vehicles and robot-run warehouses, through to the analysis of customer data and fraud detection, ML is impacting the lives
+              of billions of people globally. Perhaps the most well-known use of ML occurs in driverless vehicles, which are currently using neural networks to classify objects, predict other driver’s actions and efficiently navigate to destinations;
+              with their ability to process data more than 1GB per second, such systems are analysing their surrounds with much greater accuracy than vision-based systems (Ors 2020). Leveraging the statistic that eighty per cent of people prefer
+              personalised shopping experiences, retailers are increasingly employing ML alongside visitor profile data to create targeted promotions and customised experiences for their patrons, managing their stock and retargeting people who did
+              not make a purchase but are open to persuasion (Gray 2020). Similarly, entertainment companies are using ML to present relevant content to their customers while the banking and finance sector utilises similar techniques to analyse
+              consumer sentiment and, in turn, make predictions about investment risks and returns (Gupta 2021). In the field of healthcare, researchers are using ML algorithms to create knowledge graphs, predict interactions between molecules and
+              drugs, and explore the efficacy of new medications; this means that pre-phase trials are often avoidable and thus increases the rate at which new treatments become available (Anadiotis 2021).
             </p>
             <br>
 
-            <p>ML has many potential near-future applications especially as quantum computing becomes a reality and the speed at which large volumes of data can be processed increases. For example, IBM’s Green Horizon’s project is attempting to analyse data from thousands of sources by using ML to predict changes in weather and pollution patterns (Tarantola 2017); such analysis could be soon employed to help combat issues such as climate change. To tackle the rising problem of ageing populations around the world, ML is being developed for care-giver robots to give them the ability to understand their user’s preferences and thus provide them customised support (Tarantola 2017). Facial analysis technologies using ML algorithms have already proven more successful than clinical experts in identifying certain genetic syndromes (Gurovich et al. 2017) and will likely be able to diagnose a greater number of conditions with even more accuracy in the coming years. Especially relevant following recent events, there is likely to be a vast improvement in the capacity of AI to predict outbreaks of disease; in fact, BlueDot’s AI was one of the first to send alerts about the COVID-19 outbreak in December 2019 (Marr 2021). Undoubtedly there will be an increasing reliance on ML algorithms to identify and predict cybersecurity threats too. As the Internet of Things increases in scope and penetration more data will be available thus enhancing the potential for ML to automate industrial and business processes (Whiting 2020).
+            <p>ML has many potential near-future applications especially as quantum computing becomes a reality and the speed at which large volumes of data can be processed increases. For example, IBM’s Green Horizon’s project is attempting to
+              analyse data from thousands of sources by using ML to predict changes in weather and pollution patterns (Tarantola 2017); such analysis could be soon employed to help combat issues such as climate change. To tackle the rising problem of
+              ageing populations around the world, ML is being developed for care-giver robots to give them the ability to understand their user’s preferences and thus provide them customised support (Tarantola 2017). Facial analysis technologies
+              using ML algorithms have already proven more successful than clinical experts in identifying certain genetic syndromes (Gurovich et al. 2017) and will likely be able to diagnose a greater number of conditions with even more accuracy in
+              the coming years. Especially relevant following recent events, there is likely to be a vast improvement in the capacity of AI to predict outbreaks of disease; in fact, BlueDot’s AI was one of the first to send alerts about the COVID-19
+              outbreak in December 2019 (Marr 2021). Undoubtedly there will be an increasing reliance on ML algorithms to identify and predict cybersecurity threats too. As the Internet of Things increases in scope and penetration more data will be
+              available thus enhancing the potential for ML to automate industrial and business processes (Whiting 2020).
             </p>
             <br>
 
             <h3>What is the likely impact?</h3>
             <br>
 
-            <p>ML has the potential to fundamentally change the ways in which we live and work. These changes could have both positive and negative effects especially if ML is left unregulated or is misused. Many processes will inevitably become automated as the accuracy and safety of ML systems improves. Autonomous vehicles may provide safer, more efficient and more economical transportation, but at the cost of jobs. Likewise, automated industrial and retail processes will probably improve both production and logistics while increasing the need for a better educated populace as the manual labour market contracts. In catering for inherent human laziness, ML may indirectly and detrimentally affect peoples’ health given that there will be less need for individuals to leave the house, perform physical activities or interact with others.</p>
+            <p>ML has the potential to fundamentally change the ways in which we live and work. These changes could have both positive and negative effects especially if ML is left unregulated or is misused. Many processes will inevitably become
+              automated as the accuracy and safety of ML systems improves. Autonomous vehicles may provide safer, more efficient and more economical transportation, but at the cost of jobs. Likewise, automated industrial and retail processes will
+              probably improve both production and logistics while increasing the need for a better educated populace as the manual labour market contracts. In catering for inherent human laziness, ML may indirectly and detrimentally affect peoples’
+              health given that there will be less need for individuals to leave the house, perform physical activities or interact with others.</p>
             <br>
 
-            <p>As aforementioned, ML systems could also have numerous benefits for the health of society such as through the expedited development of medications, early diagnoses of medical conditions and the prediction of viral outbreaks. Additionally, ML could improve safety for everyone through detecting and preventing online fraud, identifying and tracing people suspected of committing crimes and replacing people in dangerous occupations - such as police officers or soldiers.</p>
+            <p>As aforementioned, ML systems could also have numerous benefits for the health of society such as through the expedited development of medications, early diagnoses of medical conditions and the prediction of viral outbreaks.
+              Additionally, ML could improve safety for everyone through detecting and preventing online fraud, identifying and tracing people suspected of committing crimes and replacing people in dangerous occupations - such as police officers or
+              soldiers.</p>
             <br>
 
-            <p>However, these benefits do not come without their associated risks. Too much trust in the perceived infallibility of AI and ML may lead to medical treatments being approved for widespread use without having undergone sufficiently rigorous testing. In the fight against crime, it is not clear how much individual privacy would need to be sacrificed to use ML defence systems. Many ethical issues arise from the concept of AI and ML in law enforcement and warfare, not in the least the problem of accountability; for instance, if an AI or ML system uses lethal force to prevent a crime but is later found to have acted unduly, who or what is responsible for this negligence?</p>
+            <p>However, these benefits do not come without their associated risks. Too much trust in the perceived infallibility of AI and ML may lead to medical treatments being approved for widespread use without having undergone sufficiently
+              rigorous testing. In the fight against crime, it is not clear how much individual privacy would need to be sacrificed to use ML defence systems. Many ethical issues arise from the concept of AI and ML in law enforcement and warfare, not
+              in the least the problem of accountability; for instance, if an AI or ML system uses lethal force to prevent a crime but is later found to have acted unduly, who or what is responsible for this negligence?</p>
             <br>
 
-            <p>For all the convenience and benefits ML promises it is vital to be cognisant of its potential risks especially those related to privacy. As businesses continue to employ ML to target consumers, security agencies develop facial recognition and other biometric processing software, and political parties turn to algorithms to influence elections, it is worth noting that such techniques are only viable with access to a large pool of peoples’ data. Data breaches have and will continue to happen leaving everyone vulnerable. It is also worth considering the impact of ML on those living in poverty. Though ML has the capacity to further democratise knowledge and reduce the cost of goods and services through automation, will vulnerable people benefit or simply become a mine to exploit for data-seekers? If such people do not have the same level of access to ML technologies, will they be left even further behind? As ML engineering pioneer Michael I. Jordan has said, we must think of ML as a ‘humancentric discipline’ which has the potential to ‘deliver value to humans [rather than] amplify inequities’ (Pretz 2021, para. 7 & 18).
+            <p>For all the convenience and benefits ML promises it is vital to be cognisant of its potential risks especially those related to privacy. As businesses continue to employ ML to target consumers, security agencies develop facial
+              recognition and other biometric processing software, and political parties turn to algorithms to influence elections, it is worth noting that such techniques are only viable with access to a large pool of peoples’ data. Data breaches
+              have and will continue to happen leaving everyone vulnerable. It is also worth considering the impact of ML on those living in poverty. Though ML has the capacity to further democratise knowledge and reduce the cost of goods and
+              services through automation, will vulnerable people benefit or simply become a mine to exploit for data-seekers? If such people do not have the same level of access to ML technologies, will they be left even further behind? As ML
+              engineering pioneer Michael I. Jordan has said, we must think of ML as a ‘humancentric discipline’ which has the potential to ‘deliver value to humans [rather than] amplify inequities’ (Pretz 2021, para. 7 & 18).
             </p>
             <br>
 
             <h3>How will this affect you?</h3>
             <br>
 
-            <p>I expect ML will eventually decrease the number of things I need to do manually and increase the efficiency of tasks I still need to complete, all of which will provide me with more free time. Of course, this will bring both advantages and potential hazards. On a daily basis I will be required to store and recall information less frequently as everyday activities such as driving, planning meals and organising one’s finances becomes automated. This may lead to slight cognitive declines which could easily be offset through increased time to, say, read. With improved retail and logistics systems I would also be able to find what I need and have it delivered with more convenience, again, increasing the time I have available to engage in other pursuits; sadly, though, this could lead to a decrease in the time I spend interacting with others.</p>
+            <p>I expect ML will eventually decrease the number of things I need to do manually and increase the efficiency of tasks I still need to complete, all of which will provide me with more free time. Of course, this will bring both advantages
+              and potential hazards. On a daily basis I will be required to store and recall information less frequently as everyday activities such as driving, planning meals and organising one’s finances becomes automated. This may lead to slight
+              cognitive declines which could easily be offset through increased time to, say, read. With improved retail and logistics systems I would also be able to find what I need and have it delivered with more convenience, again, increasing the
+              time I have available to engage in other pursuits; sadly, though, this could lead to a decrease in the time I spend interacting with others.</p>
             <br>
 
-            <p>Professionally, as an authentication analyst, I predict that many tasks I now perform will be automated using ML technologies. This will greatly reduce my stress at work leaving me with more time to focus more important assignments and should eliminate the errors I naturally make on occasion. There is, however, the possibility that ML could eventually put my employment at risk; this consideration has led me to upskill through education, so ML, in a real sense, is already affecting my daily life. </p>
+            <p>Professionally, as an authentication analyst, I predict that many tasks I now perform will be automated using ML technologies. This will greatly reduce my stress at work leaving me with more time to focus more important assignments and
+              should eliminate the errors I naturally make on occasion. There is, however, the possibility that ML could eventually put my employment at risk; this consideration has led me to upskill through education, so ML, in a real sense, is
+              already affecting my daily life. </p>
             <br>
 
-            <p>I hope advances in ML will bring benefits to my family, who are all residing overseas. Cheaper modes of transportation brought about through autonomous vehicles may mean we are able to visit each other more often. I also hope that ML will help my ageing parents remain healthy through medical innovations, accurate diagnoses of illnesses and the provision of automated assistance for everyday tasks. Though I have some concerns regarding the privacy issues surrounding the increasing adoption of machine learning by businesses and governments, I believe the technology will ultimately benefit people like me.</p>
+            <p>I hope advances in ML will bring benefits to my family, who are all residing overseas. Cheaper modes of transportation brought about through autonomous vehicles may mean we are able to visit each other more often. I also hope that ML
+              will help my ageing parents remain healthy through medical innovations, accurate diagnoses of illnesses and the provision of automated assistance for everyday tasks. Though I have some concerns regarding the privacy issues surrounding
+              the increasing adoption of machine learning by businesses and governments, I believe the technology will ultimately benefit people like me.</p>
             <br>
 
             <h3>References</h3>
@@ -701,7 +908,8 @@
 
             <p>Gupta, A 2021, <i>5 Industries That Will See A Staggering Adoption Of Machine Learning In 2021</i>, Express Computer, viewed 5 April 2021</p>
             <p>
-              &lt<a href="https://www.expresscomputer.in/guest-blogs/5-industries-that-will-see-a-staggering-adoption-of-machine-learning-in-2021/74526/">https://www.expresscomputer.in/guest-blogs/5-industries-that-will-see-a-staggering-adoption-of-machine-learning-in-2021/74526/</a>&gt
+              &lt<a
+                href="https://www.expresscomputer.in/guest-blogs/5-industries-that-will-see-a-staggering-adoption-of-machine-learning-in-2021/74526/">https://www.expresscomputer.in/guest-blogs/5-industries-that-will-see-a-staggering-adoption-of-machine-learning-in-2021/74526/</a>&gt
             </p>
             <br>
             <br>
@@ -715,35 +923,40 @@
 
             <p>Li, Q 2021, <i>Machine Learning: What It Is and Why It Matters</i>, SAS Insights, viewed 6 April 2021</p>
             <p>
-              &lt<a href="https://www.sas.com/en_au/insights/analytics/machine-learning.html#:~:text=Machine%20learning%20is%20a%20method,decisions%20with%20minimal%20human%20intervention">https://www.sas.com/en_au/insights/analytics/machine-learning.html#:~:text=Machine%20learning%20is%20a%20method,decisions%20with%20minimal%20human%20intervention</a>&gt
+              &lt<a
+                href="https://www.sas.com/en_au/insights/analytics/machine-learning.html#:~:text=Machine%20learning%20is%20a%20method,decisions%20with%20minimal%20human%20intervention">https://www.sas.com/en_au/insights/analytics/machine-learning.html#:~:text=Machine%20learning%20is%20a%20method,decisions%20with%20minimal%20human%20intervention</a>&gt
             </p>
             <br>
             <br>
 
             <p>Marr, B 2020, <i>The 4 Top Artificial Intelligence Trends For 2021</i>, Forbes, viewed 5 April 2021</p>
             <p>
-              &lt<a href="https://www.forbes.com/sites/bernardmarr/2020/09/21/the-4-top-artificial-intelligence-trends-for-2021/?sh=b9843c01c2a0">https://www.forbes.com/sites/bernardmarr/2020/09/21/the-4-top-artificial-intelligence-trends-for-2021/?sh=b9843c01c2a0</a>&gt
+              &lt<a
+                href="https://www.forbes.com/sites/bernardmarr/2020/09/21/the-4-top-artificial-intelligence-trends-for-2021/?sh=b9843c01c2a0">https://www.forbes.com/sites/bernardmarr/2020/09/21/the-4-top-artificial-intelligence-trends-for-2021/?sh=b9843c01c2a0</a>&gt
             </p>
             <br>
             <br>
 
             <p>Ors, A 2020, <i>The Role Of Machine Learning In Autonomous Vehicles</i>, Electronic Design, viewed on 5 April 2021</p>
             <p>
-              &lt<a href="https://www.electronicdesign.com/markets/automotive/article/21147200/nxp-semiconductors-the-role-of-machine-learning-in-autonomous-vehicles">https://www.electronicdesign.com/markets/automotive/article/21147200/nxp-semiconductors-the-role-of-machine-learning-in-autonomous-vehicles</a>&gt
+              &lt<a
+                href="https://www.electronicdesign.com/markets/automotive/article/21147200/nxp-semiconductors-the-role-of-machine-learning-in-autonomous-vehicles">https://www.electronicdesign.com/markets/automotive/article/21147200/nxp-semiconductors-the-role-of-machine-learning-in-autonomous-vehicles</a>&gt
             </p>
             <br>
             <br>
 
             <p>Panova, E 2021, <i>Which AI Has Come Closest to Passing The Turing Test?</i>, Dataconomy, viewed 5 April 2021</p>
             <p>
-              &lt<a href="https://dataconomy.com/2021/03/which-ai-closest-passing-turing-test/#:~:text=To%20date%2C%20no%20AI%20has,to%20transform%20them%20into%20sentences">https://dataconomy.com/2021/03/which-ai-closest-passing-turing-test/#:~:text=To%20date%2C%20no%20AI%20has,to%20transform%20them%20into%20sentences</a>&gt
+              &lt<a
+                href="https://dataconomy.com/2021/03/which-ai-closest-passing-turing-test/#:~:text=To%20date%2C%20no%20AI%20has,to%20transform%20them%20into%20sentences">https://dataconomy.com/2021/03/which-ai-closest-passing-turing-test/#:~:text=To%20date%2C%20no%20AI%20has,to%20transform%20them%20into%20sentences</a>&gt
             </p>
             <br>
             <br>
 
             <p>Pretz, K 2021, <i>Stop Calling Everything AI, Machine-learning Pioneer Says</i>, IEEE Spectrum, viewed 5 April 2021</p>
             <p>
-              &lt<a href="https://spectrum.ieee.org/the-institute/ieee-member-news/stop-calling-everything-ai-machinelearning-pioneer-says">https://spectrum.ieee.org/the-institute/ieee-member-news/stop-calling-everything-ai-machinelearning-pioneer-says</a>&gt
+              &lt<a
+                href="https://spectrum.ieee.org/the-institute/ieee-member-news/stop-calling-everything-ai-machinelearning-pioneer-says">https://spectrum.ieee.org/the-institute/ieee-member-news/stop-calling-everything-ai-machinelearning-pioneer-says</a>&gt
             </p>
             <br>
             <br>
