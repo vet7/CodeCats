@@ -92,6 +92,13 @@
 .expandButton {
   color: var(--color-orange);
 }
+.expandButton:hover {
+  color: var(--color-black);
+}
+
+.figures {
+  text-align: center;
+}
 
 .imgLeft {
   float: left;
