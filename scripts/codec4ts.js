@@ -1,6 +1,6 @@
 function showProfile1(imgs) {
 
-    document.getElementById("CB").style.opacity = "1";
+  document.getElementById("CB").style.opacity = "1";
   document.getElementById("JK").style.opacity = "0.6";
   document.getElementById("JR").style.opacity = "0.6";
   document.getElementById("EM").style.opacity = "0.6";
