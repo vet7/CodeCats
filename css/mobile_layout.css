@@ -4,59 +4,14 @@ body {
   padding: 0;
 }
 
-.navbar {
-  overflow: hidden;
-  color: var(--color-orange);
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background-color: var(--bg-secondary);
-  color: black;
-}
-
-.navbar .icon {
-  display: none;
-}
-
-/* Hide all links */
 @media screen and (max-width: 600px) {
-  .navbar a {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
-
-  .navbar a.icon {
+  .topnav a.icon {
     float: right;
     display: block;
   }
-}
-
-/* Adding responsive class when clicking on the menu icon */
-@media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: relative;
-  }
-
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
   #navleft {
     padding-left: 10px;
   }
@@ -79,32 +34,26 @@ body {
     max-width: 100px;
     padding-top: 160px;
   }
+
 }
 
-/* Animated menu icon */
-.mobilemenucontainer {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 5px;
-  background-color: var(--color-orange);
-  margin: 5px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }

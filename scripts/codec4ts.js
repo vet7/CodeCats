@@ -8,7 +8,7 @@ function showProfile1(imgs) {
   document.getElementById("YY").style.opacity = "0.6";
 
   var profileImg = document.getElementById("profileimg");
-  profileImg.src = "../assets/Personality_Tests/Chelsea.jpg";
+  profileImg.src = "assets/Personality_Tests/Chelsea.jpg";
   profileimg.parentElement.style.display = "block";
   document.getElementById('name').innerHTML = "Chelsea Bragg";
   document.getElementById("bio").innerHTML = "Chelsea currently lives in Townsville QLD, where she works as a Daycare Teacher. She has always had an interest in IT, particularly when it comes to videogames. Videogames have always been a massive part of her life. She would use them as an escape when she was a child, often spending hours on her Game Boy trying to complete her Pokédex in Pokémon Yellow. She dabbled in a few IT classes in high school, obtaining Certificate I and II in IT. Career-wise, she spent a few years as an IT Support Technician, offering rudimentary tech support, which usually involved assisting elderly customers with their emails. Although she enjoyed this role, she did not find it particularly challenging, which is a big part as to why she has decided to enter into a Bachelor of Information Technology at RMIT. Outside of IT, her hobbies include drawing, cooking and learning Japanese. ";
@@ -25,7 +25,7 @@ function showProfile2(imgs) {
   document.getElementById("YY").style.opacity = "0.6";
 
   var profileImg = document.getElementById("profileimg");
-  profileImg.src = "../assets/Personality_Tests/Jake.jpg";
+  profileImg.src = "assets/Personality_Tests/Jake.jpg";
   profileimg.parentElement.style.display = "block";
   document.getElementById('name').innerHTML = "Jake Kent";
   document.getElementById("bio").innerHTML = "Jake is an aspiring web developer and IT professional who grew up in a small town in NSW. While working he has found a love for problem solving and data analysis and decided that the right field for him to be in would be IT. In 2020 he obtained Diploma of Information Technology through TAFE Digital, and in March 2021 began a bachelor degree through RMIT via Open Universities. In his spare time he likes to grow chilis, adding a healthy amount to every meal he cooks. He also tries to slowly learn Spanish to communicate with work colleagues and friends. ";
@@ -42,7 +42,7 @@ function showProfile3(imgs) {
   document.getElementById("YY").style.opacity = "0.6";
 
   var profileImg = document.getElementById("profileimg");
-  profileImg.src = "../assets/Personality_Tests/Ashvin.jpg";
+  profileImg.src = "assets/Personality_Tests/Ashvin.jpg";
   profileimg.parentElement.style.display = "block";
   document.getElementById('name').innerHTML = "Joseph Ashwin Royan";
   document.getElementById("bio").innerHTML = "Ashwin was born in Singapore and grew up in Malaysia. He moved to Australia to study and work, and he currently lives in Perth. Apart from English he can speak Malay conversationally. He has a background in industrial design and has some experience with graphic design and illustration. He has been fascinated with computers and technology since he was young. He especially likes the act of creating something new and thinking about possible implications and applications. He doesn’t have any professional experience with IT, but he has self-learned some rudimentary Flash, HTML, CSS and Python. In his free time, he likes to exercise - specifically power and Olympic lifting or ride my bicycle around the nearby lake. He also enjoys playing video games, cooking, listening to history and philosophy podcasts, and petting his cat Nebby.  ";
@@ -59,7 +59,7 @@ function showProfile4(imgs) {
   document.getElementById("YY").style.opacity = "0.6";
 
   var profileImg = document.getElementById("profileimg");
-  profileImg.src = "../assets/Personality_Tests/Eun_Mi.jpg";
+  profileImg.src = "assets/Personality_Tests/Eun_Mi.jpg";
   profileimg.parentElement.style.display = "block";
   document.getElementById('name').innerHTML = "Eun Mi Seo";
   document.getElementById("bio").innerHTML = "Eun Mi is from South Korea and migrated to Melbourne 10 years ago. Back in Korea, she received a Bachelor of Arts, specialising in literature, and worked at one of the biggest retail companies there for ten years. Currently she is working at an online security company as an authentication analyst, and she wants to develop her career in IT industry. She started her job without any IT knowledge or tech skills and believes understanding the IT industry with some technical skills is crucial to her career development and she also would like to learn more about Cybersecurity. In her spare time, she enjoys watching AFL and cricket games and listening to music.  ";
@@ -76,7 +76,7 @@ function showProfile5(imgs) {
   document.getElementById("YY").style.opacity = "0.6";
 
   var profileImg = document.getElementById("profileimg");
-  profileImg.src = "../assets/Personality_Tests/Arian.jpg";
+  profileImg.src = "assets/Personality_Tests/Arian.jpg";
   profileimg.parentElement.style.display = "block";
   document.getElementById('name').innerHTML = "Arian Najafi Yamchelo";
   document.getElementById("bio").innerHTML = "Arian is from Iran and he migrated to Melbourne, Australia 10 years ago. He graduated from high school in Iran before moving out. He speaks Farsi and Turkish, studied a couple of certificates in spoken and written English upon arrival in Australia. Besides that, he has completed a Certificate IV in programming. He is interested in game development and always wanted to work with popular gaming studios. His eldest brother, a computer hardware engineer bought him the first laptop. Since then, his passion for coding started, and he wants to be a software developer. In his spare time, he likes to play video games and workout. Being an animal lover, he has three dogs, Sunny, Heeva (German Shepherds) and Teddy (Samoyed), and a cat named Barfi (Persian Cat). ";
@@ -93,13 +93,27 @@ function showProfile6(imgs) {
   document.getElementById("YY").style.opacity = "1";
 
   var profileImg = document.getElementById("profileimg");
-  profileImg.src = "../assets/Personality_Tests/Yvette.jpg";
+  profileImg.src = "assets/Personality_Tests/Yvette.jpg";
   profileimg.parentElement.style.display = "block";
   document.getElementById('name').innerHTML = "Yvette Yang";
   document.getElementById("bio").innerHTML = "Yvette was born in the United States and raised in Australia. Currently she lives in Sydney. Apart from English, she speaks basic mandarin. She has previously completed a Diploma in Communication & Media and has recently transferred from a Bachelor of Design in Architecture to a Bachelor in Information Technology. She is interested in IT because it is an industry that is fast, innovative, dynamic and progressive, and likes to both problem-solve and explore new ways of doing things. Her best buddy is Kaya, she’s a border-collie cross kelpie. In her spare time, she loves to surf, hike, travel, hang out at gigs, and read. Presently, Yvette is in a phase of collecting and reading graphic novels (manga) and comics. Among them, she finds The Walking Dead particularly fascinating. ";
   document.getElementById("overview").innerHTML = "Overview: Yvette is an ENFP. People of this type tend to see their colleagues as friends and enjoy building genuine relationships with others. They thrive in supportive environments where everyone is seen as equal and are open about their ideas and opinions. As they value freedom above all else, ENFP’s are highly independent and perform best when they are not being micromanaged even though this may sometimes be necessary. They are not usually known to be great at administrative tasks involving routine upkeep and needs someone to handle organisational matters. They also tend to overthink, get stressed easily and are prone to being too hard on themselves especially in situations where they believe they have made a mistake. However, these types are generally open-minded, creative and particularly adaptable to almost every other personality type and can easily adopt new ways of thinking and communication styles into their vocabulary. ENFP’s are exceedingly growth-orientated individuals who believe that there will always be room for improvement (NERIS Analytics 2021). "
   document.getElementById("reflection").innerHTML = "Reflection: I think this is a good indication of my personality. I am extroverted as I get most of my energy from spending time with others, but I also need time to myself too. There are certain aspects that I believe, due to the process of active development, have improved over time; especially in terms of routine upkeep, I am a lot more structured when it comes to work or study than I use to be; this is perhaps most apparent in my Big-Five conscientiousness scores. I strongly believe that none of us will ever be perfect and that we as individuals should always strive to better ourselves in areas where we are weak. Where I am currently wishing to improve most is my tendency to overthink, especially when it comes to other people’s feelings. I think a good strategy for me is to give people the benefit of the doubt and take less time trying to make sure everyone is happy, although I probably will not ever be able to not care at all as I would not be true to myself then. As for learning styles I am fairly balanced and learn best through incorporating all four approaches. At the end of the day, I like to see how theory can be put into practice.";
 }
+
+function myFunction() {
+  var x = document.getElementById("navright");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+
+
 
 function mobileview() {
   var x = document.getElementById("navright");
