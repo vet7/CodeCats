@@ -101,8 +101,131 @@ function showProfile6(imgs) {
   document.getElementById("reflection").innerHTML = "Reflection: I think this is a good indication of my personality. I am extroverted as I get most of my energy from spending time with others, but I also need time to myself too. There are certain aspects that I believe, due to the process of active development, have improved over time; especially in terms of routine upkeep, I am a lot more structured when it comes to work or study than I use to be; this is perhaps most apparent in my Big-Five conscientiousness scores. I strongly believe that none of us will ever be perfect and that we as individuals should always strive to better ourselves in areas where we are weak. Where I am currently wishing to improve most is my tendency to overthink, especially when it comes to other people’s feelings. I think a good strategy for me is to give people the benefit of the doubt and take less time trying to make sure everyone is happy, although I probably will not ever be able to not care at all as I would not be true to myself then. As for learning styles I am fairly balanced and learn best through incorporating all four approaches. At the end of the day, I like to see how theory can be put into practice.";
 }
 
+
+function show_ref1() {
+
+
+  document.getElementById("reflections_container").style.display = "block";
+
+
+  document.getElementById("ref_name").innerHTML = "Chelsea";
+
+  document.getElementById("first_a").innerHTML = "Our group was formed very quickly and organically, which allowed us to really take our time with our tasks instead of rushing to get things done. With people from all backgrounds and varying skill sets, we were able to break our tasks down and assign them based on the skills best suited to each of us. As we all joined the group independently and early on, as opposed to waiting for an automatically allocated group, we were able to build a great rapport, which definitely made a difference in terms of communication and collaboration.";
+
+
+  document.getElementById("second_a").innerHTML = "As we all worked very well together, any improvements would be minor. I think that as we are all very supportive individuals, when it came to providing feedback or suggestions to others concerning their individual contributions, we were a bit hesitant to speak up so as not to offend anyone. Going forward into A3, we should be a bit more open in terms of providing constructive feedback.";
+
+  document.getElementById("third_a").innerHTML = "With course content being delivered completely online, I initially thought our group might struggle with communication. However, early on, we set our group up in MS Teams and decided on days/times for group meetings. We also set up a team server on Discord where we could discuss topics outside of our assignment, such as gaming and our pets, which played a defining role in coming up with our team name, Code-Cats.";
+
+  document.getElementById("forth_a").innerHTML = "Overall, I have learnt that building a great foundation of communication and trust is essential for a group to run smoothly. I have also learnt that assigning defined tasks early on is vital when it comes to meeting deadlines.";
+
+}
+
+function show_ref2() {
+  document.getElementById("reflections_container").style.display = "block";
+
+  document.getElementById("ref_name").innerHTML = "Jake";
+
+
+  document.getElementById("first_a").innerHTML = "The way that our group formed so quickly and proactively was fantastic and changed my perspective on how I thought the task was going to be moving forward. Previously I had always felt that group tasks were an inherent struggle, however with how quickly our group formed and how friendly/ready everybody in the group was, it has made for a really wonderful experience. The communication around all of our tasks has been great and everyone in our team is so helpful, honest, and understanding when it comes to task completion.";
+
+
+  document.getElementById("second_a").innerHTML = "I think I could have communicated a bit better individually with my group mates 1 on 1, most of my communication with everyone was through the group chat and I didn’t really devote much time to building rapport outside of the group context. I think this is a bit of a shame because we have such a good group and I didn’t make the time to learn about their lives and families and hobbies.";
+
+
+  document.getElementById("third_a").innerHTML = "The main thing that surprised me was that everyone in the group was reliable and none slacked off. In all of the group work that I have done in the past, even playing in bands, there is one or two people who create a dragnet that either slows down the group’s progression, or you have to chase them to keep them on track.";
+
+
+  document.getElementById("forth_a").innerHTML = "One major thing that I’ve learnt about groups from this assessment is that joining a group early increases the chance that you will be paired up with like-minded proactive people. I feel that it is a self explanatory phenomenon, however until I joined this group I didn’t think that a group like ours would be a realistic experience for me. In the future I am definitely going to join project groups well ahead of the assessment start date.";
+
+}
+
+
+function show_ref3() {
+  document.getElementById("reflections_container").style.display = "block";
+
+  document.getElementById("ref_name").innerHTML = "Yvette";
+
+
+  document.getElementById("first_a").innerHTML = "I think our group works particularly well because we all respect one another, and we all put in the effort to make things work. Due to this, I find that the group is very considerate and are always happy to help each other out, even when things don’t go according to plan. I believe that the aforementioned is perhaps the most important aspect of group work. People can have different personalities, communication styles, or ideas; so long as we are deferential to each other, we will always be able to find a balance and make it work.";
+
+
+  document.getElementById("second_a").innerHTML = "Given that I really enjoy working with my group, this is perhaps just a bonus and an aspect we may wish to work on altogether. I usually find it easier to work in an environment where people are more openly analytical or commentative because it allows each member to bounce off each other’s ideas more freely. If we were all more aligned with being more openly critical, it would help generate better ideas as a whole and be more beneficial for us as well as the outcome. There is always something that can be improved.";
+
+
+  document.getElementById("third_a").innerHTML = "As this is my first time working with people I have never met online, I have noticed how much I rely a lot on none-verbal cues offline and that I need to learn how to overcome this challenge in an online context. This experience is surprising and challenging but it also gives me the chance to learn and adapt to the online aspect of group work.";
+
+
+  document.getElementById("forth_a").innerHTML = "With the help of my group I have learned how to structure a group project more effectively such as having a task-based timeline and keeping well documented minutes through MS Teams.";
+
+}
+
+function show_ref4() {
+  document.getElementById("reflections_container").style.display = "block";
+
+  document.getElementById("ref_name").innerHTML = "Ashwin";
+
+  document.getElementById("first_a").innerHTML = "I think that for the most part, this group has been one of the better group experiences I have had so far. Everyone does their own part and work is done promptly and well. Communication is good too, with issues and uncertainties cleared up quickly and efficiently. I liked that everyone was very supportive and understanding of each other.";
+
+
+  document.getElementById("second_a").innerHTML = "The only thing that could be improved is that we should have defined clearer leadership early on and managed dividing tasks a little better. For most of the start of this assignment, we did not assign a leadership role as it did not seem like one was necessary at the time. I feel that this might have been a mistake as it made delegation and a better structure to our work a little harder to assign. Fortunately, we did realize this, and Chelsea took the initiative to fill a leadership position. After this, our work became a lot more structured and organized.";
+
+
+  document.getElementById("third_a").innerHTML = "One thing that surprised me is how diligent and earnest my groupmates are. Everyone was dependable and met deadlines promptly. Criticism was always constructive, and everyone had a strong mutual respect.";
+
+  document.getElementById("forth_a").innerHTML = "I have learnt that groups can work well together if everyone is clear about what roles they need to fill and if they all trust and support each other. I have also learned that communication is key and not to be afraid to speak up to resolve any issues that are faced.";
+}
+
+function show_ref5() {
+  document.getElementById("reflections_container").style.display = "block";
+
+  document.getElementById("ref_name").innerHTML = "Arian";
+
+
+  document.getElementById("first_a").innerHTML = "Everyone is considerate and happy to help, we were able to communicate effectively and complete the tasks that everyone was assigned to. Everyone was reliable and helpful. Group was able to maintain the in group due dates and show effort towards completing the initial drafts, I did not feel under pressure as everyone was able to contribute equally and ready to help others at any point upon request.";
+
+
+  document.getElementById("second_a").innerHTML = "Communication could be improved as sometimes I found myself lost and had to ask about how to go about tasks. I had to refer to the assignment information PDF which is mostly my own problem.";
+
+
+  document.getElementById("third_a").innerHTML = "I was surprised at how easy it was to organise and complete tasks online, and I was assigned with the tasks that I could complete without having to many troubles and I was able to contribute to the group work effectively.";
+
+  document.getElementById("forth_a").innerHTML = "I have learned how to deal with groups in an online environment. Additionally, I have learned how to manage my time and distribute equal time to work and study at the same time and not compromise any of them in any way. Overall, it was a wonderful experience for me and learned a lot from it.";
+}
+
+
+function show_ref6() {
+  document.getElementById("reflections_container").style.display = "block";
+
+  document.getElementById("ref_name").innerHTML = "Eun Mi";
+
+
+  document.getElementById("first_a").innerHTML = "Meeting new people causes me to feel anxious, regardless of the context. Fortunately, every member was kind, friendly, and polite, which quickly made me comfortable enough to open up. It was a great decision to start having small talks via Discord, sharing our hobbies, details of pets and daily life stories. Through continuous casual conversation every day, we came to understand each other’s personalities, build our relationships, and learn how to collaborate. Throughout the assignment period, we also kept communicating by sharing information and feedback, and offering help. There was not a single day we failed to speak: we stayed close and always connected regardless of what we were doing and where we were.";
+
+
+  document.getElementById("second_a").innerHTML = "We could have nominated a leader sooner, which could have helped us move forward more efficiently with tasks and create a productive team structure in which we could exchange our suggestions or feedback more freely without worrying too much about hurting others’ feelings. Now that we have a lead role and a better-structured team, it will improve our efficiency in working on future assignments.";
+
+
+  document.getElementById("third_a").innerHTML = "I often hear the lack of bonding and response are the common challenges in a group, but we did not experience such issues. Everyone must have had other matters to deal with, such as other courses, work and family, but our group members have always been reliable and responsive. It was a pleasant surprise to find out every one of us was responsible and accountable.";
+
+  document.getElementById("forth_a").innerHTML = "Throughout the assignment, I learned that good communication and building relationships are the keys to success. There were many challenges, especially as all of our work is conducted online, but engaging everyone and continuing to converse online was a significant contribution to our team’s success.";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function myFunction() {
-  var x = document.getElementById("navright");
+  var x = document.getElementById("myTopNav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
@@ -134,6 +257,7 @@ function expandAV() {
   var z = document.getElementById("expandarticleBC");
   var y = document.getElementById("expandarticleCS");
   var t = document.getElementById("expandarticleML");
+  var g = document.getElementById("expandarticleIW");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -142,6 +266,7 @@ function expandAV() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
+    g.style.display = "none";
   }
 }
 
@@ -151,6 +276,7 @@ function expandBC() {
   var y = document.getElementById("expandarticleCS");
   var t = document.getElementById("expandarticleML");
   var z = document.getElementById("expandarticleAV");
+  var g = document.getElementById("expandarticleIW");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -159,6 +285,7 @@ function expandBC() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
+    g.style.display = "none";
   }
 }
 
@@ -168,6 +295,7 @@ function expandCS() {
   var t = document.getElementById("expandarticleML");
   var z = document.getElementById("expandarticleAV");
   var y = document.getElementById("expandarticleBC");
+  var g = document.getElementById("expandarticleIW");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -176,12 +304,33 @@ function expandCS() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
+    g.style.display = "none";
   }
 }
 
 function expandML() {
   var s = document.getElementById("scrolltoML");
   var x = document.getElementById("expandarticleML");
+  var t = document.getElementById("expandarticleAV");
+  var z = document.getElementById("expandarticleBC");
+  var y = document.getElementById("expandarticleCS");
+  var g = document.getElementById("expandarticleIW");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    s.scrollIntoView();
+    z.style.display = "none";
+    y.style.display = "none";
+    t.style.display = "none";
+    g.style.display = "none";
+  }
+}
+
+function expandIW() {
+  var s = document.getElementById("scrolltoIW");
+  var x = document.getElementById("expandarticleIW");
+  var g = document.getElementById("expandarticleML");
   var t = document.getElementById("expandarticleAV");
   var z = document.getElementById("expandarticleBC");
   var y = document.getElementById("expandarticleCS");
@@ -193,5 +342,6 @@ function expandML() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
+    g.style.display = "none";
   }
 }

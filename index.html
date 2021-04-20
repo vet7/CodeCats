@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/desktop_layout.css">
   <link rel="stylesheet" type="text/css" href="css/mobile_layout.css">
   <link rel="stylesheet" type="text/css" href="css/font_styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="scripts/codec4ts.js"></script>
   <title>Home</title>
 </head>
@@ -20,61 +22,57 @@
 
 
 
+      <div id="navright">
 
 
-      <div class="topnav" id="navright">
+
+        <div class="topnav" id="myTopNav">
 
 
-        <div class="dropdown">
-          <button class="dropbtn">Team Profile
-
-            <i class="fa fa-caret-down"></a></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="index.html">Meet the Team</a>
-            <a href="#section4">Industry Data</a>
-            <a href="#references">Refrences</a>
+          <div class="dropdown">
+            <button class="dropbtn">Team
+              <i class="fa fa-caret-down"></a></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">Team Profile</a>
+              <a href="index.html#section2">Ideal Jobs</a>
+              <a href="index.html#section3">Tools</a>
+              <a href="index.html#section4">Industry Data</a>
+            </div>
           </div>
-        </div>
 
-        <div class="dropdown">
-          <button class="dropbtn">Project
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="content/project_idea.html">Group Project Idea</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+
+
+          <div class="dropdown">
+            <button class="dropbtn">IT
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="content/information_technology.html">IT Work</a>
+              <a href="content/information_technology.html#section2">IT Technologies</a>
+            </div>
           </div>
-        </div>
 
 
-        <div class="dropdown">
-          <button class="dropbtn">IT Technology
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="content/it_technologies.html">IT Technologies</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='content/project.html'">Project
+            </button>
           </div>
-        </div>
 
 
-        <div class="dropdown">
-          <button class="dropbtn">IT Works
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="content/about.html">Interview</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+          <div class="dropdown">
+            <button class="dropbtn">Feedback
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="content/feedback.html">Meetings</a>
+              <a href="content/feedback.html#section2">Group Reflection</a>
+            </div>
           </div>
-        </div>
 
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
       </div>
-
 
 
 
@@ -86,30 +84,12 @@
 
 
 
-
-
-
         <section id="section1">
-          <h1>GROUP REFLECTIONS</h1>
-          <article>
-            <p>We believe it is essential to understand the team members’ personalities when it comes to group work. We agreed that good communication, collaboration, building a bond based on trust, and demonstrating leadership are the keys to
-              success. The personality test results helped us understand our strengths and weaknesses, and we are confident that we have the potential to be a successful team. </p>
-            <br><br>
-            <img src="assets/Profile_Pics/mindmap.png" alt="Mind Map">
-            <br><br>
-            <p>First, we have discovered a lot of similarities among us. Most of us share characteristics such as being sensitive, empathetic and supportive. These characteristics will play a significant role in our group by facilitating the building
-              of relationships and a friendly environment. In team meetings, we will begin with personal conversation to make everyone feel comfortable and welcome, rather than going to business immediately. In addition, we will have casual chats
-              anytime, for any matter, via Discord, to further consolidate our relationships. This will help the team overcome being shy by encouraging us to open up more, and will eventually lead us to developing the confidence to voice our
-              individual opinions, thus improving our communication as a team. </p>
-            <br>
-            <p>According to the test results, we lack leadership, which is one of the essential attributes for success. We need someone who can take the lead and help delegate tasks, check our progress and volunteer when decision-making is required.
-              If the team worries about others’ feelings too much, people may hesitate to ask questions, give feedback or make decisions, preventing us from progressing. With a passionate, outspoken and goal-oriented personality as an advocate,
-              Chelsea is a strong candidate who can help with this issue, and she kindly agreed to take the leader role. Jake is also an advocate type and will assist in the leading role. Eun Mi and Arian can contribute to organising and maintaining
-              the team’s progress with their organisational skills. Ashwin and Yvette can bring their creativity and intelligence to the problem-solving aspects and presentation of the team assignment. </p>
-          </article>
+          <h1>MEET THE TEAM</h1><br>
+          <p>Click on the headshots to read more:</p>
         </section>
 
-        <section id="section2profiles">
+        <section id="section1profiles">
 
           <div id="profilephoto1" class="profilephoto">
             <img id="CB" src="assets/Profile_Pics/head_shots/Chelsea Bragg.png" alt="Chelsea Bragg" onclick="showProfile1(this);">
@@ -132,107 +112,145 @@
           <div class="profilecontainer">
             <article>
               <br><br>
-              <h2 id="name"></h2>
-              <p id="bio"></p>
+              <h2 id="name"></h2><br>
+              <p id="bio"></p><br><br>
             </article>
             <img id="profileimg">
-            <article>
-              <p id="overview"></p><br>
+            <article><br><br>
+              <p id="overview"></p><br><br>
               <p id="reflection"></p>
             </article>
-          </div>
+          </div><br>
 
         </section>
 
+
         <section id="section1">
-          <h1>IDEAL JOBS</h1>
+          <h2>GROUP REFLECTIONS</h2><br><br>
+          <article>
+            <p>We believe it is essential to understand the team members’ personalities when it comes to group work. We agreed that good communication, collaboration, building a bond based on trust, and demonstrating leadership are the keys to
+              success. The personality test results helped us understand our strengths and weaknesses, and we are confident that we have the potential to be a successful team. </p>
+            <br><br><br>
+            <img src="assets/Profile_Pics/mindmap.png" alt="Mind Map">
+            <br><br><br>
+            <p>First, we have discovered a lot of similarities among us. Most of us share characteristics such as being sensitive, empathetic and supportive. These characteristics will play a significant role in our group by facilitating the building
+              of relationships and a friendly environment. In team meetings, we will begin with personal conversation to make everyone feel comfortable and welcome, rather than going to business immediately. In addition, we will have casual chats
+              anytime, for any matter, via Discord, to further consolidate our relationships. This will help the team overcome being shy by encouraging us to open up more, and will eventually lead us to developing the confidence to voice our
+              individual opinions, thus improving our communication as a team. </p>
+            <br><br>
+            <p>According to the test results, we lack leadership, which is one of the essential attributes for success. We need someone who can take the lead and help delegate tasks, check our progress and volunteer when decision-making is required.
+              If the team worries about others’ feelings too much, people may hesitate to ask questions, give feedback or make decisions, preventing us from progressing. With a passionate, outspoken and goal-oriented personality as an advocate,
+              Chelsea is a strong candidate who can help with this issue, and she kindly agreed to take the leader role. Jake is also an advocate type and will assist in the leading role. Eun Mi and Arian can contribute to organising and maintaining
+              the team’s progress with their organisational skills. Ashwin and Yvette can bring their creativity and intelligence to the problem-solving aspects and presentation of the team assignment. </p>
+<br>
+          </article>
+        </section>
+
+
+
+        <section id="section2"><br>
+          <h1>IDEAL JOBS</h1><br><br>
           <article>
             <p>After comparing everyone’s ideal job, we have discovered some of us had the same ideal job; both Chelsea and Arian goals are to be game program- mers, and Jake and Yvette want to be full-stack web developers. Ashwin’s ideal job is a
               software developer, and Eun Mi’s is to become a cybersecu- rity analyst. Apart from Eun Mi, everyone wants to be a type of developer, and technical skills are essential. Learning programming languages such as Java, Ruby, Python, HTML,
               CSS, and C++ are common elements for be- coming a developer. On the other hand, Eun Mi requires a broad range of IT knowledge and a solid understanding of network security and systems. Though she does not need to learn programming or
               database languages in-depth, she might still need to understand a bit of Python. For Ashwin, platform and tool knowledge are additional useful skills.</p>
-            <br>
+            <br><br>
             <p>Most of us have a little bit of knowledge and experience with some of these tech skills. We want to pursue them further professionally, which is the primary motivation for enrolling in ‘Introduction to Information Tech- nology’ at
               RMIT, which is prerequisite for completing a computer science qualification. Working experience in our desired field seems to be crucial as well, such as participating in an internship to gain familiarity and guid- ance from experienced
               professionals.
             <p>
-              <br>
+              <br><br>
             <p>Apart from tech skills, we also need general skills. We all agreed commu- nication skills, interpersonal skills, problem-solving skills, and teamwork skills are essential in working in a group and interacting with the man- agement team
               or clients. Regardless of which area one will be working in, these are the fundamental skills employers are seeking. We believe we can develop these general skills while we work on assignments as a group.</p>
-            <img src="assets/Profile_Pics/idealJobsTable.png" alt="Ideal Jobs Table">
+<br><br><br>
+            <img class="border" src="assets/Profile_Pics/idealJobsTable.png" alt="Ideal Jobs Table">
 
-
+<br><br>
           </article>
         </section>
 
-        <section id="section4">
-          <h1>INDUSTRY DATA</h1>
+
+
+<section id="section3"><br>
+  <h1>Tools</h1><br>
+  <article>
+
+  </article>
+</section>
+
+
+
+
+
+        <section id="section4"><br>
+          <h1>INDUSTRY DATA</h1><br>
           <article>
-            <h2>Burning Glass</h2>
-            <br>
+            <h2>Burning Glass</h2><br>
+
             <h3>Job Title and Employer Demand</h3>
-            <br>
+            <br><br>
             <p>
               Team Code-Cats have a diverse range of ideal job positions – Chelsea and Arian are looking for the game programmer position, Jake and Yvette as- pire to be full-stack web developers. Ashwin, a software developer, and Eun Mi a cyber
               security analyst. These titles collectively boast a broad skillset. Game programmers require extensive knowledge of programming languages, in Chelsea’s case, especially C++, game development specific tools and knowledge of game engines
               such as the Unreal Engine. Arian’s ideal position requires 5-6 years of experience, a bachelor’s degree in a related field and experience working with mobile game.</p>
-            <br>
+            <br><br>
             <p>Similarly, Jake and Yvette as full-stack web developers require extensive knowledge in programming languages – including Java, Ruby and Python. Additionally, Jake’s ideal job requires experience and knowledge in fields outside IT as a
               full stack developer necessarily needs to contribute to oth- er aspects of a complete web project – these skills include user interface and experience design, colour, and typography theories. Backend skills such as knowledge of
               databases (such as SQL, PostgreSQL, and Mon- goDB), networking and cybersecurity are also required. Both Yvette and Jake also require experience and knowledge of web design such as HTML, CSS, and JavaScript. Eun Mi requires specialized
               knowledge on network security, information systems, cryptography, and vulnerability assessment, augmented with a broad understanding of a range of IT Technologies and programming languages, especially Python.</p>
-            <br>
+            <br><br>
             <p>In terms of employer demand – web developers rank the highest with 381 postings available in March 2017 – Feb 2018. Full-stack developers rank second with 344 postings in March 2017 – Feb 2018 and security analysts with 173 postings
               from March 2017 – Feb 2018. There were also 227 IOS developer postings and 171 Android Developer postings (Burning Glass Technologies 2018c, 2018e).</p>
-            <br>
-            <img class="border" src="assets/industry_data/indd_fig1.png" alt="Job Title Demand Graph">
+            <br><br><br>
+            <img src="assets/industry_data/indd_fig1.png" alt="Job Title Demand Graph">
             <p class="figures"><b>Figure 1:</b> <i>IT Job Demand Australia and New Zealand Dec. 24, 2017 - Mar. 23, 2018, Labour Insight Jobs</i> by Burning Glass Technologies, 2018c.</p>
-            <br><br>
+            <br><br><br>
             <h3>IT Specific Skills</h3>
-            <br>
+            <br><br>
             <p> As a team, Code – Cat’s required skill set consist of a wide range of skills. IT specific skills related to programming languages are knowledge of C++, CSS, HTML, JavaScript, Java, Ruby and Python. Database related skills consist of
               SQL, PostgreSQL, MongoDB. Skills using platforms and ser- vices include NodeJS, GIT and Amazon Web Services. Vue and React to create interfaces, Mocha and Chai for testing. Additionally, broader skills and knowledge is required in
               continuous integration and delivery (CI/CD), network security, information systems, cryptography, and vulnerability as- sessment. Several other specialist skills such as UI/UX, graphic design, co- lour and typography theory are also
               required. In terms of demand, the skill which ranks the highest is SQL, a database and programming language; followed by JavaScript and JAVA. Most popular programming languages are similar in demand with services and niche programs at
               the tail end. The three highest ranked IT specific skills not in the group’s skill set (marked in red on table) are Microsoft C# with 8734 postings, .NET Programming with 6836 postings and Oracle with 5966 postings (Burning Glass Tech-
               nologies 2018b, 2018d). </p>
-            <br>
-            <img class="border" src="assets/industry_data/indd_fig2.png" alt="IT Skill Demand Graph">
+            <br><br><br>
+            <img src="assets/industry_data/indd_fig2.png" alt="IT Skill Demand Graph">
             <p class="figures"><b>Figure 2:</b> <i>IT Skill Demand in Australia and New Zealand Dec. 24, 2017 - Mar. 23, 2018, Labour Insight Jobs</i> by Burning Glass Technologies, 2018b.</p>
-            <br>
+            <br><br><br>
             <h3>General Skills</h3>
-            <br>
+            <br><br>
             <p>In addition to IT specific skills, employers also require several general skills. Code – Cat’s primary required general skills are interpersonal skills, com- munication skills, problem solving and teamwork. Troubleshooting, cre-
               ativity, research skills, time management, quality assurance and control, and meeting deadlines are also required. Employer demand ranks commu- nication skill as the most sought after, followed by problem solving and teamwork. The top
               three highly ranked general skills that are not required by Code – Cats (marked in red on table) are organizational skills, writing, and planning (Burning Glass Technologies 2018a, 2018b).</p>
-            <br>
-            <img class="border" src="assets/industry_data/indd_fig3.png" alt="General Skill Demand">
+            <br><br><br>
+            <img src="assets/industry_data/indd_fig3.png" alt="General Skill Demand">
             <p class="figures"><b>Figure 3:</b> <i>General Skill Demand in Australia and New Zealand Dec. 24, 2017 - Mar. 23, 2018, Labour Insight Jobs</i> by Burning Glass Technologies, 2018a.</p>
-            <br>
+            <br><br><br>
             <h3>Gaming Industry Data</h3>
-            <br>
+            <br><br>
 
             <p>The burning glass data provided did not mention many specific game development skills; two members of Code-Cats have ideal jobs in the industry. As such we are including some other data found specific to this segment of IT. The video
               game industry in Australia is a sizable portion of the IT sector, it was worth 2.96 billion in 2017 (Brand et al., cited in IGEA 2018). </p>
-            <br>
+            <br><br><br>
 
             <img class="border" src="assets/industry_data/indd_fig4.jpg" alt="Gaming Industry Data Graph">
             <p class="figures"><b>Figure 4:</b> <i>Australian Video Game Development 2016-2017</i> by IGEA, 2018</p>
-            <br>
+            <br><br><br>
             <p>During the global Coronavirus pandemic, there was a significant surge, going up to 3.4 billion (Consultancy.org 2021). With the mobile gaming industry (Arians chosen field) consisting of a large portion of its developmental focus - 55%
               and 49% of studios focusing on Android and IOS development, respectively. As the industry is experiencing significant growth, it can be inferred that video game development positions will also experience parallel growth (Brand et al.,
               cited in IGEA 2018). According to the same data, 33% of game studio employees are programmers. </p>
-            <br>
+            <br><br><br>
             <img class="border" src="assets/industry_data/indd_fig5.jpg" alt="Gaming Industry Data Graph">
             <p class="figures"><b>Figure 5:</b> <i>Interactive Game and Esports Projections</i> by Consultancy.org, 2021. </p>
-            <br>
+            <br><br>
             <br>
             <img class="border" src="assets/industry_data/indd_fig6.jpg" alt="Gaming Industry Data Graph">
             <p class="figures"><b>Figure 6:</b> <i>by Consultancy.org, 2021. </i> by Consultancy.org, 2021.</p>
-            <br>
-            <h2>Team Reflections</h2>
+            <br><br><br>
+            <h2>Reflections</h2>
 
-            <br>
+            <br><br>
             <h3>Chelsea</h3>
             <br>
             <p>After reviewing the Burning Glass data, my opinion of my ideal job has not changed. Although the data does not specifically mention my ideal job of game programmer in its statistics in terms of demand, it does indicate some overlap in
@@ -240,26 +258,26 @@
               understanding of these skills and continue to strengthen them daily. Regarding specific IT skill requirements, my ideal job requires applicants to have an in-depth understanding of programming languages, C++ specifically. Although C++
               is rated relatively average in terms of demand, Microsoft C# appears quite high, and as a lot of game development utilises C#, I can focus on creating a solid foundation of knowledge, which will provide the potential to shift between
               alternative projects that rely more on C#. </p>
-            <br>
+            <br><br>
             <h3>Arian</h3>
             <br>
             <p>After reviewing the burning glass data, my opinion hasn’t changed about my ideal job. Although there’s no mention of game developer nor game designer in the statistics, Java, Python, C# and most importantly C++ are the most important
               programming languages when it comes to developing games and according to the data they are considered high IT skill demand in IT industry.  My ideal job requires me to have sound knowledge of content creation and working on mobile apps
               which mostly involves programming using C# and C++. According to IGEA (2018) the gaming industry is growing although there are some challenges in the gaming industry the income generated by the Australian game development studios were
               over $115 million which is increasing every year. </p>
-            <br>
+            <br><br>
             <h3>Jake</h3>
             <br>
             <p>After reviewing the Burning Glass data my opinion of full stack development as my ideal job has not changed. While Full Stack Developer is 17th in the list of Top IT Job Titles the skillset that is acquired by a full stack developer is
               utilised in most of the positions ranked higher up on the industry data list; two major full stack skills (SQL, and JavaScript) are also the top two IT skills in greatest demand. The vast scope of skills that a full stack developer
               requires is what makes this role so attractive to me, as the drive of continually learning and finding more efficient or effective ways to work are dominant forces in my approach to life.</p>
-            <br>
+            <br><br>
             <h3>Yvette</h3>
             <br>
             <p>Reflecting upon the Burning Glass data, I think it is now more practical for me to aim at becoming a software developer. This is partly due to the title being in the top 3 in terms of highest in demand (BGT 2018c). Software developers
               also require a comprehensive and flexible skillset which gives me the option of applying for other positions – e.g., full stack developer – in the future. After some further research, a software developer generally allows for: (1)
               flexible hours - normally there is only a timeframe for the developer to work on; (2) flexible locations to work from and less travelling; (3) allows for an abundance of creativity as well as skills. </p>
-            <br>
+            <br><br>
             <h3>Ashwin</h3>
             <br>
             <p>Reviewing the burning glass data, I have not changed my opinion on my ideal job. I would still like to be a software programmer. Conversely, the data has highlighted the necessity of learning multiple skills over a broad range of
@@ -267,7 +285,7 @@
               have some background in such as graphic design, colour theory and typography. I do however still prefer software development and the data has shown me what skills I need to expand or take steps towards acquiring. In terms of general
               skills, the data has shown me that I need to develop skills that may not necessarily be on the job description such as the three skills - organization, writing and planning that were not on any of our job requirements, yet highly sought
               after by employers.</p>
-            <br>
+            <br><br>
             <h3>Eun Mi</h3>
             <br>
             <p>After examining the Burning Glass data, it was apparent the industry demands various IT-specific skills; SQL, JavaScript and JAVA are the most sought-after of these. Indeed, skills related to programming and development are generally
@@ -276,7 +294,7 @@
               general knowledge of IT. It may, therefore, be best for me to begin by obtaining some IT-specific skills, perhaps by working in IT support. With several years of experience, I could progress into the area of cybersecurity. In my current
               employment, I have already begun to develop general skills in high demand, such as communication skills, problem-solving, organisational skills; the next step for me is to obtain greater technical proficiency. </p>
             <br>
-
+<br><br>
             <h3 id="references">Refrences</h3>
 
             <br>

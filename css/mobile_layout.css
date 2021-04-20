@@ -3,9 +3,12 @@ body {
   margin: 0;
   padding: 0;
 }
+a.icon {
+  font-size: 35px;
+}
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+@media screen and (max-width: 760px) {
+  .topnav a, .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -14,6 +17,9 @@ body {
   }
   #navleft {
     padding-left: 10px;
+  }
+  #navright {
+    padding-right: 10px;
   }
 
   #content {
@@ -37,12 +43,12 @@ body {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right:0;
+    top:0;
   }
   .topnav.responsive a {
     float: none;
@@ -50,7 +56,7 @@ body {
     text-align: left;
   }
   .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown-content {position: fixed;}
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;

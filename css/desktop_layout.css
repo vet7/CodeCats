@@ -37,6 +37,7 @@
   height: auto;
   z-index: 3;
   background-color: var(--bg-primary);
+  opacity: 0.99;
 }
 
 #navleft {
@@ -51,19 +52,17 @@
 
 
 .topnav {
-  position: fixed;
+  float: right;
   top: 0;
-  z-index: 999;
-  overflow: hidden;
+  z-index: -1;
+  overflow: auto;
   background-color: var(--color-white);
 }
 
 .topnav a {
-  float: right;
   display: block;
   background-color: var(--color-white);
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -75,7 +74,6 @@
 .dropdown {
   float: left;
   position: relative;
-  z-index: 9999;
 }
 
 .dropdown .dropbtn {
@@ -95,7 +93,7 @@
   background-color: var(--color-white);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 999;
 }
 
 .dropdown-content a {
@@ -137,20 +135,47 @@
   margin: -50px 40px -50px 40px;
   z-index: 2;
   overflow: auto;
+  display: block;
 }
 
 #content p {
   overflow: auto;
 }
 
-#expandarticleAV, #expandarticleBC, #expandarticleCS, #expandarticleML {
+#expandarticleAV, #expandarticleBC, #expandarticleCS, #expandarticleML, #expandarticleIW {
   display: none;
 }
 
-#content img {
-  width: 100%;
+.imgLeftITT {
+  display: inline-block;
+  width: 30%;
+  float: left;
+  border: 1px solid var(--color-orange);
+}
+.textRight {
+  padding-left: 10px;
+}
+
+.figuresleft {
+  clear: left;
   display: block;
 }
+
+#lowq {
+  display: block;
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 #expandarticleAV img {
   max-width: 100%;
@@ -175,7 +200,6 @@
 
 .border {
   border: 1px solid var(--color-orange);
-
 }
 
 .expandButton {
@@ -190,33 +214,27 @@
   text-align: center;
 }
 
-.imgLeft {
-  float: left;
-  display: inline-block;
-  width: 20%;
-  padding-right: 10px;
-}
+
+
 
 .imgMid {
   width: 800px;
 }
 
-#section1, #section2, #section3, #section4, #section2profiles {
+#section1, #section2, #section3, #section4, #section1profiles {
   margin: 0;
   padding: 30px;
 }
 
-#section1, #section3 {
-  border: 0px solid var(--color-black);
+#section1, #section3, #section1profiles {
   background-color: var(--bg-primary);
 }
 
-#section2, #section4, #section2profiles {
-  border: 0px solid var(--color-orange);
+#section2, #section4 {
   background-color: var(--bg-secondary);
 }
 
-#section2profiles {
+#section1profiles {
   display: grid;
   grid:
     "profilephoto1 profilephoto2 profilephoto3 profilephoto4 profilephoto5 profilephoto6"
@@ -263,25 +281,6 @@
   padding: 30px;
 }
 
-#section3 {
-  display: grid;
-  grid:
-    "s3h s3h"
-    "s3left s3right"/ 2fr 1fr;
-}
-
-#section3 h1 {
-  grid-area: s3h;
-}
-
-#s3left {
-  grid-area: s3left;
-}
-
-#s3right {
-  grid-area: s3right;
-}
-
 p {
   text-align: justify;
   text-justify: inter-word;
@@ -295,6 +294,28 @@ ol, ul {
 .projectImg {
   display: block;
   width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  height: 200px;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+#reflections_container {
+  display: none;
+}
+
+
+.reflectionBtn {
+  color: var(--color-orange);
+}
+
+.reflectionBtn:hover {
+  color: var(--color-black);
 }
 
 #footleft, #footright {
