@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 a.icon {
   font-size: 35px;
 }
@@ -11,13 +12,16 @@ a.icon {
   .topnav a, .dropdown .dropbtn {
     display: none;
   }
+
   .topnav a.icon {
     float: right;
     display: block;
   }
+
   #navleft {
     padding-left: 10px;
   }
+
   #navright {
     padding-right: 10px;
   }
@@ -40,23 +44,33 @@ a.icon {
     max-width: 100px;
     padding-top: 160px;
   }
-
 }
 
 @media screen and (max-width: 760px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
+
   .topnav.responsive .icon {
     position: absolute;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: fixed;}
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: fixed;
+  }
+
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;

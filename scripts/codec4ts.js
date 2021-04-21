@@ -214,14 +214,48 @@ function show_ref6() {
 
 
 
+function show_id_ref1() {
+  document.getElementById("id_reflections_container").style.display = "block";
+  document.getElementById("industrydata_ref_name").innerHTML = "Chelsea";
+  document.getElementById("industrydata_ref").innerHTML = "After reviewing the Burning Glass data, my opinion of my ideal job has not changed. Although the data does not specifically mention my ideal job of game programmer in its statistics in terms of demand, it does indicate some overlap in highly sought-after skills, both technical and general. Based on the provided data, the top three general skills in demand are communication, problem-solving and organisational. Personally, I believe that I already have a great understanding of these skills and continue to strengthen them daily. Regarding specific IT skill requirements, my ideal job requires applicants to have an in-depth understanding of programming languages, C++ specifically. Although C++ is rated relatively average in terms of demand, Microsoft C# appears quite high, and as a lot of game development utilises C#, I can focus on creating a solid foundation of knowledge, which will provide the potential to shift between alternative projects that rely more on C#.";
+
+}
+
+function show_id_ref2() {
+  document.getElementById("id_reflections_container").style.display = "block";
+  document.getElementById("industrydata_ref_name").innerHTML = "Jake";
+  document.getElementById("industrydata_ref").innerHTML = "After reviewing the Burning Glass data my opinion of full stack development as my ideal job has not changed. While Full Stack Developer is 17th in the list of Top IT Job Titles the skillset that is acquired by a full stack developer is utilised in most of the positions ranked higher up on the industry data list; two major full stack skills (SQL, and JavaScript) are also the top two IT skills in greatest demand. The vast scope of skills that a full stack developer requires is what makes this role so attractive to me, as the drive of continually learning and finding more efficient or effective ways to work are dominant forces in my approach to life.";
+
+}
+
+function show_id_ref3() {
+  document.getElementById("id_reflections_container").style.display = "block";
+  document.getElementById("industrydata_ref_name").innerHTML = "Yvette";
+  document.getElementById("industrydata_ref").innerHTML = "Reflecting upon the Burning Glass data, I think it is now more practical for me to aim at becoming a software developer. This is partly due to the title being in the top 3 in terms of highest in demand (BGT 2018c). Software developers also require a comprehensive and flexible skillset which gives me the option of applying for other positions – e.g., full stack developer – in the future. After some further research, a software developer generally allows for: (1) flexible hours - normally there is only a timeframe for the developer to work on; (2) flexible locations to work from and less travelling; (3) allows for an abundance of creativity as well as skills.";
+
+}
 
 
+function show_id_ref4() {
+  document.getElementById("id_reflections_container").style.display = "block";
+  document.getElementById("industrydata_ref_name").innerHTML = "Ashwin";
+  document.getElementById("industrydata_ref").innerHTML = "Reviewing the burning glass data, I have not changed my opinion on my ideal job. I would still like to be a software programmer. Conversely, the data has highlighted the necessity of learning multiple skills over a broad range of professions, and there are many overlaps between the skills required for the different roles. I would like to consider a role in full-stack web development though as the data has shown me that many of the skills required are ones that I have some background in such as graphic design, colour theory and typography. I do however still prefer software development and the data has shown me what skills I need to expand or take steps towards acquiring. In terms of general skills, the data has shown me that I need to develop skills that may not necessarily be on the job description such as the three skills - organization, writing and planning that were not on any of our job requirements, yet highly sought after by employers.";
 
+}
 
+function show_id_ref5() {
+  document.getElementById("id_reflections_container").style.display = "block";
+  document.getElementById("industrydata_ref_name").innerHTML = "Arian";
+  document.getElementById("industrydata_ref").innerHTML = "After reviewing the burning glass data, my opinion hasn’t changed about my ideal job. Although there’s no mention of game developer nor game designer in the statistics, Java, Python, C# and most importantly C++ are the most important programming languages when it comes to developing games and according to the data they are considered high IT skill demand in IT industry.  My ideal job requires me to have sound knowledge of content creation and working on mobile apps which mostly involves programming using C# and C++. According to IGEA (2018) the gaming industry is growing although there are some challenges in the gaming industry the income generated by the Australian game development studios were over $115 million which is increasing every year. ";
 
+}
 
+function show_id_ref6() {
+  document.getElementById("id_reflections_container").style.display = "block";
+  document.getElementById("industrydata_ref_name").innerHTML = "Eun Mi";
+  document.getElementById("industrydata_ref").innerHTML = "After examining the Burning Glass data, it was apparent the industry demands various IT-specific skills; SQL, JavaScript and JAVA are the most sought-after of these. Indeed, skills related to programming and development are generally favoured. It seems vital to equip oneself with some of these technical skills to start a professional career in the IT industry, which raises many questions for me. Initially, my ideal job was a cybersecurity analyst, which usually requires an IT degree, an understanding of a range of IT technologies, and experience in the field. Although some technical skills, such as network and systems security, are specified, it appears cybersecurity analysts require a broad general knowledge of IT. It may, therefore, be best for me to begin by obtaining some IT-specific skills, perhaps by working in IT support. With several years of experience, I could progress into the area of cybersecurity. In my current employment, I have already begun to develop general skills in high demand, such as communication skills, problem-solving, organisational skills; the next step for me is to obtain greater technical proficiency. ";
 
-
+}
 
 
 function myFunction() {
@@ -343,5 +377,20 @@ function expandIW() {
     y.style.display = "none";
     t.style.display = "none";
     g.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+function expandRef() {
+  var x = document.getElementById("hideref_team");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }

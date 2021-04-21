@@ -43,13 +43,12 @@
 #navleft {
   grid-area: navleft;
   padding-top: 14px;
+  padding-right: 100px;
 }
 
 #navright {
   grid-area: navright;
 }
-
-
 
 .topnav {
   float: right;
@@ -92,7 +91,7 @@
   position: fixed;
   background-color: var(--color-white);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
@@ -118,7 +117,6 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 #banner {
   grid-area: banner;
@@ -150,8 +148,8 @@
   display: inline-block;
   width: 30%;
   float: left;
-  border: 1px solid var(--color-orange);
 }
+
 .textRight {
   padding-left: 10px;
 }
@@ -175,7 +173,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 #expandarticleAV img {
   max-width: 100%;
@@ -213,9 +210,6 @@ img {
 .figures {
   text-align: center;
 }
-
-
-
 
 .imgMid {
   width: 800px;
@@ -296,6 +290,12 @@ ol, ul {
   width: 100%;
 }
 
+.imgright {
+  float: right;
+  display: inline;
+  max-width: 30%;
+}
+
 .grid-container {
   display: grid;
   height: 200px;
@@ -309,6 +309,13 @@ ol, ul {
   display: none;
 }
 
+#id_reflections_container {
+  display: none;
+}
+
+#hideref_team {
+  display: none;
+}
 
 .reflectionBtn {
   color: var(--color-orange);
@@ -316,6 +323,10 @@ ol, ul {
 
 .reflectionBtn:hover {
   color: var(--color-black);
+}
+
+.orange_color {
+  color: var(--color-orange);
 }
 
 #footleft, #footright {
