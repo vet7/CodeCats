@@ -44,6 +44,9 @@ a.icon {
   #lowq {
     width: 100%;
   }
+  #links {
+    text-align:left;
+  }
 }
 
 @media screen and (max-width: 750px) {
