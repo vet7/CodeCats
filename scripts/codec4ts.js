@@ -212,7 +212,7 @@ function animatedmenu(x) {
 
 // Expand the articles, function to expand the articles on click
 function expandAV() {
-  var s = document.getElementById("scrolltoAV");
+  var av = document.getElementById("scrolltoAV");
   var x = document.getElementById("expandarticleAV");
   var z = document.getElementById("expandarticleBC");
   var y = document.getElementById("expandarticleCS");
@@ -221,7 +221,7 @@ function expandAV() {
     x.style.display = "none";
   } else {
     x.style.display = "block";
-    s.scrollIntoView();
+    av.scrollIntoView();
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
@@ -229,7 +229,7 @@ function expandAV() {
 }
 
 function expandBC() {
-  var s = document.getElementById("scrolltoBC");
+  var bc = document.getElementById("scrolltoBC");
   var x = document.getElementById("expandarticleBC");
   var y = document.getElementById("expandarticleCS");
   var t = document.getElementById("expandarticleML");
@@ -238,7 +238,7 @@ function expandBC() {
     x.style.display = "none";
   } else {
     x.style.display = "block";
-    s.scrollIntoView();
+    bc.scrollIntoView();
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
@@ -246,7 +246,7 @@ function expandBC() {
 }
 
 function expandCS() {
-  var s = document.getElementById("scrolltoCS");
+  var cs = document.getElementById("scrolltoCS");
   var x = document.getElementById("expandarticleCS");
   var t = document.getElementById("expandarticleML");
   var z = document.getElementById("expandarticleAV");
@@ -255,7 +255,7 @@ function expandCS() {
     x.style.display = "none";
   } else {
     x.style.display = "block";
-    s.scrollIntoView();
+    cs.scrollIntoView();
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
@@ -263,7 +263,7 @@ function expandCS() {
 }
 
 function expandML() {
-  var s = document.getElementById("scrolltoML");
+  var ml = document.getElementById("scrolltoML");
   var x = document.getElementById("expandarticleML");
   var t = document.getElementById("expandarticleAV");
   var z = document.getElementById("expandarticleBC");
@@ -272,7 +272,7 @@ function expandML() {
     x.style.display = "none";
   } else {
     x.style.display = "block";
-    s.scrollIntoView();
+    ml.scrollIntoView();
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
