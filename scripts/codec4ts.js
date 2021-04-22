@@ -217,7 +217,6 @@ function expandAV() {
   var z = document.getElementById("expandarticleBC");
   var y = document.getElementById("expandarticleCS");
   var t = document.getElementById("expandarticleML");
-  var g = document.getElementById("expandarticleIW");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -226,7 +225,6 @@ function expandAV() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
-    g.style.display = "none";
   }
 }
 
@@ -236,7 +234,6 @@ function expandBC() {
   var y = document.getElementById("expandarticleCS");
   var t = document.getElementById("expandarticleML");
   var z = document.getElementById("expandarticleAV");
-  var g = document.getElementById("expandarticleIW");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -245,7 +242,6 @@ function expandBC() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
-    g.style.display = "none";
   }
 }
 
@@ -255,7 +251,6 @@ function expandCS() {
   var t = document.getElementById("expandarticleML");
   var z = document.getElementById("expandarticleAV");
   var y = document.getElementById("expandarticleBC");
-  var g = document.getElementById("expandarticleIW");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -264,7 +259,6 @@ function expandCS() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
-    g.style.display = "none";
   }
 }
 
@@ -274,7 +268,6 @@ function expandML() {
   var t = document.getElementById("expandarticleAV");
   var z = document.getElementById("expandarticleBC");
   var y = document.getElementById("expandarticleCS");
-  var g = document.getElementById("expandarticleIW");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -283,26 +276,6 @@ function expandML() {
     z.style.display = "none";
     y.style.display = "none";
     t.style.display = "none";
-    g.style.display = "none";
-  }
-}
-
-function expandIW() {
-  var s = document.getElementById("scrolltoIW");
-  var x = document.getElementById("expandarticleIW");
-  var g = document.getElementById("expandarticleML");
-  var t = document.getElementById("expandarticleAV");
-  var z = document.getElementById("expandarticleBC");
-  var y = document.getElementById("expandarticleCS");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-    s.scrollIntoView();
-    z.style.display = "none";
-    y.style.display = "none";
-    t.style.display = "none";
-    g.style.display = "none";
   }
 }
 
