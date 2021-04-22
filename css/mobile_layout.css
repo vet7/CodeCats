@@ -8,8 +8,8 @@ a.icon {
   font-size: 35px;
 }
 
-@media screen and (max-width: 760px) {
-  .topnav a, .dropdown .dropbtn {
+@media screen and (max-width: 750px) {
+  .topnav a, .navbtn .btnCC {
     display: none;
   }
 
@@ -23,7 +23,8 @@ a.icon {
   }
 
   #navright {
-    padding-right: 10px;
+    padding-right: 20px;
+    padding-top: 15px;
   }
 
   #content {
@@ -40,13 +41,12 @@ a.icon {
     padding-top: 20px;
   }
 
-  #footright img {
-    max-width: 100px;
-    padding-top: 160px;
+  #lowq {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 750px) {
   .topnav.responsive {
     position: relative;
   }
@@ -63,17 +63,41 @@ a.icon {
     text-align: left;
   }
 
-  .topnav.responsive .dropdown {
+  .topnav.responsive .navbtn {
     float: none;
   }
 
-  .topnav.responsive .dropdown-content {
+  .topnav.responsive .navbtn-content {
     position: fixed;
   }
 
-  .topnav.responsive .dropdown .dropbtn {
+  .topnav.responsive .navbtn .btnCC {
     display: block;
     width: 100%;
     text-align: left;
   }
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: var(--color-orange);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  width: 30px;
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  width: 30px;
+  -webkit-transform: rotate(45deg) translate(-9px, -6px);
+  transform: rotate(45deg) translate(-9px, -6px);
 }
