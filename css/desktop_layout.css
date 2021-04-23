@@ -213,7 +213,6 @@ img {
 
 #profilephoto1, #profilephoto2, #profilephoto3, #profilephoto4, #profilephoto5, #profilephoto6 {
   padding: 10px;
-  border: 0px solid var(--color-black);
 }
 
 .profilephoto img {

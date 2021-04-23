@@ -41,11 +41,21 @@ a.icon {
     padding-top: 20px;
   }
 
+  #section1profiles {
+    display: grid;
+    grid:
+      "profilephoto1 profilephoto2 profilephoto3"
+      "profilephoto4 profilephoto5 profilephoto6"
+      "profilecontainer profilecontainer profilecontainer"
+      "profilecontainer profilecontainer profilecontainer"/ 1fr 1fr 1fr;
+  }
+
   #lowq {
     width: 100%;
   }
+
   #links {
-    text-align:left;
+    text-align: left;
   }
 }
 
