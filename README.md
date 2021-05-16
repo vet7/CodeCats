@@ -1,2 +1,2 @@
 # CodeCats
-This is the repository for Code Cats' Intro to IT A2 group assessment
+This is the repository for Code Cats' Intro to IT A3/5 group assessment
