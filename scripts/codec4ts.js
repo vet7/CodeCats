@@ -203,7 +203,6 @@ function show_CP1() {
   document.getElementById("ref_name").innerHTML = "Chelsea";
   var CPimg = document.getElementById("career_plans");
   CPimg.src = "assets/Career_Plans/chelseaCP.png";
-  CPimg.alt = "Chelsea Career Plan";
   CPimg.parentElement.style.display = "block";
 }
 function show_CP2() {
