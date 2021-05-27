@@ -195,6 +195,53 @@ function show_id_ref6() {
   document.getElementById("industrydata_ref").innerHTML = "After examining the Burning Glass data, it was apparent the industry demands various IT-specific skills; SQL, JavaScript and JAVA are the most sought-after of these. Indeed, skills related to programming and development are generally favoured. It seems vital to equip oneself with some of these technical skills to start a professional career in the IT industry, which raises many questions for me. Initially, my ideal job was a cybersecurity analyst, which usually requires an IT degree, an understanding of a range of IT technologies, and experience in the field. Although some technical skills, such as network and systems security, are specified, it appears cybersecurity analysts require a broad general knowledge of IT. It may, therefore, be best for me to begin by obtaining some IT-specific skills, perhaps by working in IT support. With several years of experience, I could progress into the area of cybersecurity. In my current employment, I have already begun to develop general skills in high demand, such as communication skills, problem-solving, organisational skills; the next step for me is to obtain greater technical proficiency. ";
 }
 
+
+
+// Career Plans
+function show_CP1() {
+  document.getElementById("reflections_container").style.display = "block";
+  document.getElementById("ref_name").innerHTML = "Chelsea";
+  var CPimg = document.getElementById("career_plans");
+  CPimg.src = "assets/Career_Plans/chelseaCP.png";
+  CPimg.alt = "Chelsea Career Plan";
+  CPimg.parentElement.style.display = "block";
+}
+function show_CP2() {
+  document.getElementById("reflections_container").style.display = "block";
+  document.getElementById("ref_name").innerHTML = "Jake";
+  var CPimg = document.getElementById("career_plans");
+  CPimg.src = "assets/Career_Plans/jakeCP.png";
+  CPimg.parentElement.style.display = "block";
+}
+function show_CP3() {
+  document.getElementById("reflections_container").style.display = "block";
+  document.getElementById("ref_name").innerHTML = "Yvette";
+  var CPimg = document.getElementById("career_plans");
+  CPimg.src = "assets/Career_Plans/vetCP.png";
+  CPimg.parentElement.style.display = "block";
+}
+function show_CP4() {
+  document.getElementById("reflections_container").style.display = "block";
+  document.getElementById("ref_name").innerHTML = "Ashwin";
+  var CPimg = document.getElementById("career_plans");
+  CPimg.src = "assets/Career_Plans/ashwinCP.png";
+  CPimg.parentElement.style.display = "block";
+}
+function show_CP5() {
+  document.getElementById("reflections_container").style.display = "block";
+  document.getElementById("ref_name").innerHTML = "Arian";
+  var CPimg = document.getElementById("career_plans");
+  CPimg.src = "assets/Career_Plans/arianCP.png";
+  CPimg.parentElement.style.display = "block";
+}
+function show_CP6() {
+  document.getElementById("reflections_container").style.display = "block";
+  document.getElementById("ref_name").innerHTML = "Eun Mi";
+  var CPimg = document.getElementById("career_plans");
+  CPimg.src = "assets/Career_Plans/eunCP.png";
+  CPimg.parentElement.style.display = "block";
+}
+
 // Mobile layout for the navigation bar, function to add responsive class to the navigation bar
 function mobile_layout() {
   var x = document.getElementById("myTopNav");
