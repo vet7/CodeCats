@@ -158,6 +158,43 @@ function show_ref6() {
   document.getElementById("forth_a").innerHTML = "It was a lovely surprise when we completed more tasks on time within a smaller timeframe, proving our efficiency and organisation as a team. At times we were overwhelmed with juggling work, study and personal matters, but we had great fun as well. When we discussed the game and character name and saw Arian’s comic creation, we had a lot of laughs. I learnt we could achieve goals as a team and have fun when it comes to a well-formed group. ";
 }
 
+// Group processes, function to show individual group processes on click
+function show_id_gp1() {
+  document.getElementById("id_gp_container").style.display = "block";
+  document.getElementById("gp_name").innerHTML = "Chelsea";
+  document.getElementById("gp").innerHTML = "Our team worked very well together in Assignment 2. Although in the initial stages we may have been a bit lost, after we assigned a defined leader and responsibilities, we found our footing and were able to collaborate and communicate effectively and efficiently, which, in turn led to a great end result. Going forward into Assignment 3, we knew it would be essential to assign roles/responsibilities and deadlines from the beginning, and so, we made this a priority and one of the first things we implemented. We also took feedback from Assignment 2 into account, specifically our individual GitHub contributions. In Assignment 2, we only had a few members of the group working on our website whilst the rest of the group focused on other tasks. For assignment 3, we will be working to ensure that all members of the group contribute to our GitHub repository.";
+}
+
+function show_id_gp2() {
+  document.getElementById("id_gp_container").style.display = "block";
+  document.getElementById("gp_name").innerHTML = "Jake";
+  document.getElementById("gp").innerHTML = "Our team performed fantastically for Assessment 2. Building on a tension point identified during the first assessment, we assigned Chelsea to be the team leader and our workflow took on a more structured and transparent quality which gave the team a better understanding of the required tasks, and the task completion progress. On top of the more refined team roles we experienced a boost of confidence upon receiving the feedback and criticism of Assessment 2. The feedback highlighted areas which the team discussed efforts to improve on for Assessment 3, notably increasing group participation on the website/coding portions of our project. With Assessment 3 I think that the team will be able to build upon the foundations laid out in our first two assessments and improve on the quality of work produced while also functioning better together as a unit.";
+}
+
+function show_id_gp3() {
+  document.getElementById("id_gp_container").style.display = "block";
+  document.getElementById("gp_name").innerHTML = "Yvette";
+  document.getElementById("gp").innerHTML = "All team members were supportive and responsible throughout the entirety of Assignment 2. We were able to effectively communicate with one another and we believe this is an essential part of groupwork. We also learnt that assigning a team leader made a significant difference to our workflow and helped ensure the details of our assessment brief and rubric were covered. Due to our experiences and feedback for Assignment 2, we have self-organised earlier for Assignment 3. We will all need to be more proactive in utilising MS Teams so that each member knows precisely what needs to be done, when it needs to be done by, as well as the approximate timelines. We will also need to equally work on our GitHub website and be more specific with our SparkPlus feedback especially in terms of how each member contributed. Overall, I think such changes will be an effective tool for us to better equip ourselves for the collaborative elements of Assignment 3.";
+}
+
+function show_id_gp4() {
+  document.getElementById("id_gp_container").style.display = "block";
+  document.getElementById("gp_name").innerHTML = "Ashwin";
+  document.getElementById("gp_ref").innerHTML = "Assignment 2 went well for Code Cats. We received good feedback and criticism and many ways to improve our workflow as a team. One of the major areas that we can and plan to improve on is our collaborative efforts using GitHub as a tool. Previously we only assigned two members of the group to handle GitHub exclusively but have since realized that our work can be improved by having all members utilize the tool. Another area that we will improve on is the level of detail we will go into discussing technical aspects of our project. Going forward we will discuss on a more specialized level with more attention to technical specifics instead of in general and overarching concepts.";
+}
+
+function show_id_gp5() {
+  document.getElementById("id_gp_container").style.display = "block";
+  document.getElementById("gp_name").innerHTML = "Arian";
+  document.getElementById("gp").innerHTML = "Assignment 2 went well for our team. Everyone had an exceptional contribution to the assignment, and we received a great mark for our effort. Chelsea, the group coordinator was on top of all the tasks, and she made sure that everyone is contributing effectively and equally to the project. We had two meetings per week to follow up on the tasks that were due as well as planning upcoming tasks. Everyone helped each other and no one lacked in terms of participation and effort. For assignment 3 I believe everyone should be involved in designing and creating the website and contributing to GitHub since for assignment 2 we only had two members working on GitHub and that was one of the pieces of feedback we have received.";
+}
+
+function show_id_gp6() {
+  document.getElementById("id_gp_container").style.display = "block";
+  document.getElementById("industrydata_gp_name").innerHTML = "Eun Mi";
+  document.getElementById("gp").innerHTML = "Our team worked well in Assignment 2. Initially we did not assign a leader, affecting our capacity to make progress; however, once Chelsea assumed the role, we became far more efficient. She created task lists and allocated each accordingly, eliminating any confusion by clarifying exactly what was required from each person. The organisation and structure Chelsea provided created an atmosphere in which everyone felt confident it was possible to manage the workload and achieve success. From the commencement of work on Assignment 3, Chelsea started organising lists of tasks to complete, as well as estimating deadlines and providing detail synopses for each component of the assignment. Given how well the team managed in Assignment 2, we know this approach works, so there is no reason to introduce any changes at this stage.";
+}
+
 // Industry data reflections, function to show industry data reflections on click
 function show_id_ref1() {
   document.getElementById("id_reflections_container").style.display = "block";
