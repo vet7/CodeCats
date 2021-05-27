@@ -191,7 +191,7 @@ function show_id_gp5() {
 
 function show_id_gp6() {
   document.getElementById("id_gp_container").style.display = "block";
-  document.getElementById("industrydata_gp_name").innerHTML = "Eun Mi";
+  document.getElementById("gp_name").innerHTML = "Eun Mi";
   document.getElementById("gp").innerHTML = "Our team worked well in Assignment 2. Initially we did not assign a leader, affecting our capacity to make progress; however, once Chelsea assumed the role, we became far more efficient. She created task lists and allocated each accordingly, eliminating any confusion by clarifying exactly what was required from each person. The organisation and structure Chelsea provided created an atmosphere in which everyone felt confident it was possible to manage the workload and achieve success. From the commencement of work on Assignment 3, Chelsea started organising lists of tasks to complete, as well as estimating deadlines and providing detail synopses for each component of the assignment. Given how well the team managed in Assignment 2, we know this approach works, so there is no reason to introduce any changes at this stage.";
 }
 
