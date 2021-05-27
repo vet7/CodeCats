@@ -313,6 +313,26 @@ ol, ul {
   color: var(--color-orange);
 }
 
+#gp_container {
+  display: none;
+}
+
+#id_gp_container {
+  display: none;
+}
+
+#hidegp_team {
+  display: none;
+}
+
+.gpBtn {
+  color: var(--color-orange);
+}
+
+.gpBtn:hover {
+  color: var(--color-black);
+}
+
 #footleft, #footright {
   padding: 100px 20px 20px 20px;
   height: 400px;
