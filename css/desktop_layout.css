@@ -260,10 +260,23 @@ ol, ul {
   margin-left: 20px;
 }
 
-ul {
-  list-style-type: circle;
-  margin-left: 0;
-  padding-left: 40px;
+h3 {
+  color: var(--color-orange);
+}
+
+.darkred {
+ color: #640d14;
+}
+.red {
+color: #d00000;
+}
+
+.yellow {
+color: #ffc300;
+}
+
+.green {
+  color: #137547;
 }
 
 .projectImg {
@@ -295,6 +308,15 @@ ul {
   padding: 10px;
 }
 
+.grid-container-timeframe {
+  display: grid;
+  height: auto;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
 #reflections_container {
   display: none;
 }
@@ -317,26 +339,6 @@ ul {
 
 .orange_color {
   color: var(--color-orange);
-}
-
-#gp_container {
-  display: none;
-}
-
-#id_gp_container {
-  display: none;
-}
-
-#hidegp_team {
-  display: none;
-}
-
-.gpBtn {
-  color: var(--color-orange);
-}
-
-.gpBtn:hover {
-  color: var(--color-black);
 }
 
 #footleft, #footright {
