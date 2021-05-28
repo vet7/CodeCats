@@ -260,6 +260,12 @@ ol, ul {
   margin-left: 20px;
 }
 
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 40px;
+}
+
 h3 {
   color: var(--color-orange);
 }
