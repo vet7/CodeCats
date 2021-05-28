@@ -50,6 +50,24 @@ a.icon {
       "profilecontainer profilecontainer profilecontainer"/ 1fr 1fr 1fr;
   }
 
+  .grid-container-timeframe {
+    display: grid;
+    height: auto;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-container-meetings {
+    display: grid;
+    height: 400px;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
   #lowq {
     width: 100%;
   }
