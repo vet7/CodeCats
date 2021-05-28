@@ -116,7 +116,7 @@
   overflow: auto;
 }
 
-#expandarticleAV, #expandarticleBC, #expandarticleCS, #expandarticleML, #expandarticleIW {
+#expandarticleIJ, #expandarticleID, #expandarticleCS, #expandarticleML, #expandarticleIW {
   display: none;
 }
 
@@ -150,14 +150,14 @@ img {
   margin-right: auto;
 }
 
-#expandarticleAV img {
+#expandarticleIJ img {
   max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-#expandarticleBC img {
+#expandarticleID img {
   max-width: 100%;
   display: block;
   margin-left: auto;

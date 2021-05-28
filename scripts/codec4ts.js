@@ -294,10 +294,10 @@ function animatedmenu(x) {
 }
 
 // Expand the articles, function to expand the articles on click
-function expandAV() {
-  var av = document.getElementById("scrolltoAV");
-  var x = document.getElementById("expandarticleAV");
-  var z = document.getElementById("expandarticleBC");
+function expandIJ() {
+  var av = document.getElementById("scrolltoIJ");
+  var x = document.getElementById("expandarticleIJ");
+  var z = document.getElementById("expandarticleID");
   var y = document.getElementById("expandarticleCS");
   var t = document.getElementById("expandarticleML");
   if (x.style.display === "block") {
@@ -311,10 +311,10 @@ function expandAV() {
   }
 }
 
-function expandBC() {
-  var bc = document.getElementById("scrolltoBC");
-  var x = document.getElementById("expandarticleBC");
-  var y = document.getElementById("expandarticleCS");
+function expandID() {
+  var bc = document.getElementById("scrolltoID");
+  var x = document.getElementById("expandarticleID");
+  var y = document.getElementById("expandarticleIJ");
   var t = document.getElementById("expandarticleML");
   var z = document.getElementById("expandarticleAV");
   if (x.style.display === "block") {
