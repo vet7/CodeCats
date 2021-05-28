@@ -298,7 +298,7 @@ function expandIJ() {
   var av = document.getElementById("scrolltoIJ");
   var x = document.getElementById("expandarticleIJ");
   var z = document.getElementById("expandarticleID");
-  var y = document.getElementById("expandarticleCS");
+  var y = document.getElementById("expandarticleOV");
   var t = document.getElementById("expandarticleML");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -315,7 +315,7 @@ function expandID() {
   var bc = document.getElementById("scrolltoID");
   var x = document.getElementById("expandarticleID");
   var y = document.getElementById("expandarticleIJ");
-  var t = document.getElementById("expandarticleML");
+  var t = document.getElementById("expandarticleOV");
   var z = document.getElementById("expandarticleAV");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -328,11 +328,11 @@ function expandID() {
   }
 }
 
-function expandCS() {
-  var cs = document.getElementById("scrolltoCS");
-  var x = document.getElementById("expandarticleCS");
-  var t = document.getElementById("expandarticleML");
-  var z = document.getElementById("expandarticleAV");
+function expandOV() {
+  var cs = document.getElementById("scrolltoOV");
+  var x = document.getElementById("expandarticleOV");
+  var t = document.getElementById("expandarticleID");
+  var z = document.getElementById("expandarticleIJ");
   var y = document.getElementById("expandarticleBC");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -345,12 +345,29 @@ function expandCS() {
   }
 }
 
-function expandML() {
-  var ml = document.getElementById("scrolltoML");
-  var x = document.getElementById("expandarticleML");
-  var t = document.getElementById("expandarticleAV");
-  var z = document.getElementById("expandarticleBC");
-  var y = document.getElementById("expandarticleCS");
+function expandAI() {
+  var ml = document.getElementById("scrolltoAI");
+  var x = document.getElementById("expandarticleAI");
+  var t = document.getElementById("expandarticleID");
+  var z = document.getElementById("expandarticleIJ");
+  var y = document.getElementById("expandarticleBC");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    ml.scrollIntoView();
+    z.style.display = "none";
+    y.style.display = "none";
+    t.style.display = "none";
+  }
+}
+
+function expandPP() {
+  var ml = document.getElementById("scrolltoPP");
+  var x = document.getElementById("expandarticlePP");
+  var t = document.getElementById("expandarticleID");
+  var z = document.getElementById("expandarticleIJ");
+  var y = document.getElementById("expandarticleBC");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

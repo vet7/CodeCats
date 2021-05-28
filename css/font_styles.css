@@ -31,11 +31,11 @@ h1, h2, .btn {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 33px;
 }
 
 .btn {
@@ -44,6 +44,9 @@ h2 {
 
 h3, h4 {
   font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  color:;
+  font-weight: bold;
+  font-weight: bolder;
 }
 
   body {
