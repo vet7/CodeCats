@@ -7,7 +7,8 @@
 }
 
 body {
-  font-family: "Avenir Next Condensed", Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
 
 a {
@@ -24,22 +25,32 @@ a:hover {
 }
 
 h1, h2, .btn {
-  font-family: "DIN Condensed", Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: var(--color-orange);
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .btn {
   font-size: 20px;
 }
+
+h3, h4 {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+  body {
+    font-family: 'Nunito';
+    font-size:;
+}
+
 
 button {
   background: none;
@@ -53,7 +64,7 @@ button {
 
 #footleft, #footright {
   font-size: 12px;
-  font-family: "Avenir Next Condensed", Arial, Helvetica, sans-serif;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
   font-style: italic;
   color: var(--color-white);
 }
