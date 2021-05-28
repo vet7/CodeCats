@@ -317,6 +317,20 @@ color: #ffc300;
   padding: 10px;
 }
 
+.grid-container-characters {
+  display: grid;
+  height: auto;
+  align-content: space-evenly;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--color-orange);
+}
+
+#characters {
+  max-width: 150px;
+}
+
 #reflections_container {
   display: none;
 }
